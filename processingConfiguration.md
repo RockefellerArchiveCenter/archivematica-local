@@ -1,3 +1,8 @@
+`---` 
+`layout: docs` 
+`title:  "Rockefeller Archive Center Title of The Doc As It Will Appear On The Website"` 
+`---`
+
 ### Processing configuration
 
 On the processing configuration page of the Administration tab, it is possible to automate steps.

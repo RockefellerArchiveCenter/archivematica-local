@@ -1,3 +1,9 @@
+`---` 
+`layout: docs` 
+`title:  "Rockefeller Archive Center Archivematica"` 
+`---`
+
+
 # About
 
 ## Description

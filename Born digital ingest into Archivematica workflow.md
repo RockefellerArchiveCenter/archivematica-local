@@ -1,3 +1,8 @@
+`---` 
+`layout: docs` 
+`title:  "Rockefeller Archive Center Title of The Doc As It Will Appear On The Website"` 
+`---`
+
 # Introduction
 
 The purpose of this guide is to detail the Archivematica Ingest workflow for processed born digital materials. Processed digital materials are digital objects that have been described in a finding aid.
