@@ -3,6 +3,8 @@ layout: docs
 title:  "Archivematica/ArchivesSpace DIP Upload"
 ---
 
+
+
 ## CSV Structure
 
 CSV for automated matching
@@ -15,6 +17,7 @@ Note that filenames, including file extensions, are case sensitive, and should c
 
 For example:
 
+  -----------------------------------------------------
   data/objects/Youth Organizations.doc   ref5086\_rts
   -------------------------------------- --------------
 
