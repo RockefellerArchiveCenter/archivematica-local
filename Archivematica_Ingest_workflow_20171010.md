@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  "Manual Ingest with Archivematica Dashboard
+title:  "Manual Ingest with Archivematica Dashboard"
 ---
 
 # Manual Ingest with Archivematica Dashboard
