@@ -1,3 +1,8 @@
+`---` 
+`layout: docs` 
+`title:  "Manual Ingest with Archivematica Dashboard` 
+`---`
+
 # Manual Ingest with Archivematica Dashboard
 
 The purpose of this guide is to detail the Archivematica Ingest workflow for processed digital materials. Processed digital materials are digital objects that have been described in a finding aid. These materials may be either digitized or born-digital. The workflow for unprocessed material and born-digital materials will be incorporated (and finalized)

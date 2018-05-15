@@ -1,6 +1,6 @@
 `---` 
 `layout: docs` 
-`title:  "Rockefeller Archive Center Title of The Doc As It Will Appear On The Website"` 
+`title:  "Digitization Ingest"` 
 `---`
 
 # Introduction
