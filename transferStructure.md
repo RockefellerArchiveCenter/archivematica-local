@@ -1,3 +1,8 @@
+---
+layout: docs
+title:  "Transfer Structure"
+---
+
 # Structuring the transfer 
 
 The structured directory in Archivematica is the basic configuration of the transfer. If you just add a directory to the dashboard and start transfer processing, Archivematica will restructure it so it complies with this structure. Another option is to create a transfer in a structured directory prior to beginning processing in Archivematica. A structured directory is required for the following types of transfers:

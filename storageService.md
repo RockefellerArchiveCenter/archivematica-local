@@ -1,3 +1,8 @@
+---
+layout: docs
+title:  "Storage Service"
+---
+
 # Archivematica Storage Service
 The Archivematica Storage Service allows the configuration of storage spaces associated with multiple Archivematica pipelines. It allows a storage administrator to configure what storage is available to each Archivematica installation, both locally and remote.
 

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  "Automation Tools
+title:  "Automation Tools"
 ---
 
 # Automation Tools
