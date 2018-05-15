@@ -9,8 +9,8 @@ On the processing configuration page of the Administration tab, it is possible t
 
 These should be the default settings for processed born digital materials:
 
-|  Step                                                                          Check   Action
-|  --------------------------------------------------------------------------------- ----------- -----------------------------------------------
+|  Step                                                                          |  Check |  Action |
+|  --------------------------------------------------------------------------------- |----------- | --------------------------|
 |  Send transfer to quarantine                                                      | ✓ |  No |
 |  Approve normalization                                                            | ✓ | Yes |
 |  Store AIP                                                                        |   | n/a |
