@@ -1,7 +1,7 @@
-`---` 
-`layout: docs` 
-`title:  "Manual Ingest with Archivematica Dashboard` 
-`---`
+---
+layout: docs
+title:  "Manual Ingest with Archivematica Dashboard
+---
 
 # Manual Ingest with Archivematica Dashboard
 
@@ -28,14 +28,14 @@ During ingest, digital objects are run through several additional micro-services
 1.  **Transfer name**. TBD
 
 2.  **Accession number.** Complete this field with the accession number(s) of the materials. The accession number should be separated by a `.` . Leave blank if the accession number is not known, or if the transfer includes files from multiple accessions.
-	
+
 3.  In the transfer tab, browse to the Staging area to select the set of digital objects for upload.
 
 4.  Once the digital object directory has been uploaded, select the **Start Transfer** button to start the transfer process.
 
 ## Processing the transfer
 
-1.  In the dashboard transfer tab, the transfer will appear in the dashboard with a bell icon next to its name. This means that it is awaiting a decision by the user. In the Actions drop-down menu, select **Approve transfer** to begin processing the transfer. You may also **Reject transfer** to quit processing. 
+1.  In the dashboard transfer tab, the transfer will appear in the dashboard with a bell icon next to its name. This means that it is awaiting a decision by the user. In the Actions drop-down menu, select **Approve transfer** to begin processing the transfer. You may also **Reject transfer** to quit processing.
 
 3.  The actions for the microservices tab should be automated by selecting the proper options in the Processing Configuring section of the Administration tab.
 

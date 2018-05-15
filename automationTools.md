@@ -1,7 +1,7 @@
-`---` 
-`layout: docs` 
-`title:  "Automation Tools` 
-`---`
+---
+layout: docs
+title:  "Automation Tools
+---
 
 # Automation Tools
 

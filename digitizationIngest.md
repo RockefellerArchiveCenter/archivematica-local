@@ -1,7 +1,7 @@
-`---` 
-`layout: docs` 
-`title:  "Digitization Ingest"` 
-`---`
+---
+layout: docs
+title:  "Digitization Ingest"
+---
 
 # Introduction
 
@@ -23,5 +23,3 @@ The purpose of this guide is to detail the Archivematica Ingest workflow for pro
 ### Transfer Tab
 
 ### Ingest Tab
-
-

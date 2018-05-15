@@ -1,7 +1,7 @@
-`---` 
-`layout: docs` 
-`title:  "Born digital ingest into Archivematica workflow"` 
-`---`
+---
+layout: docs
+title:  "Born digital ingest into Archivematica workflow"
+---
 
 # Introduction
 
@@ -67,4 +67,3 @@ This work primarily takes place in the "transfer" tab
 
 Note: Once this process begins, you cannot go back to earlier stages and reconfigure ingest options. The system will pause at certain decision-making points and prompt for input prior to continuing. It’s best to be prepared for the entire process at the start, for example,
 know if normalization is required, have rights statements prepared, etc.
-
