@@ -6,7 +6,7 @@ title:  "Born digital ingest into Archivematica workflow"
 The purpose of this guide is to detail the Archivematica Ingest workflow for processed born digital materials. Processed digital materials are digital objects that have been described in a finding aid.
 
 
-## Export files & group into SIPs
+## Export files &amp; group into SIPs
 
 
 ### ArchivesSpace DIP Upload Administrative Settings
