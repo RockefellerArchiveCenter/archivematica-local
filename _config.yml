@@ -5,3 +5,15 @@ tags:
   - "archivematica"
 title: "Guide to Using Archivematica at the RAC"
 description: "Local Archivematica documentation"
+pages:
+  - ["Rockefeller Archive Center Archivematica", "index"]
+  - ["Ingest", "Archivematica_Ingest_workflow_20171010"]
+  - ["Born digital ingest", "Born digital ingest into Archivematica workflow"]
+  - ["Administration Settings", "administrationSettings"]
+  - ["ArchivesSpace DIP Upload", "archivesspaceDIPupload"]
+  - ["Automation Tools", "automationTools"]
+  - ["Digitization Ingest", "digitizationIngest"]
+  - ["PREMIS Rights", "premisRights"]
+  - ["Processing Configuration", "processingConfiguration"]
+  - ["Storage Service", "storageService"]
+  - ["Transfer Structure", "transferStructure"]
