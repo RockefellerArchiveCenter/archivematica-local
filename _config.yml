@@ -9,7 +9,7 @@ pages:
   - ["Guide to Using Archivematica at the RAC", "index"]
   - ["Transfer Structure", "transferStructure"]
   - ["Digitization Ingest", "digitizationIngest"]
-  - ["Born digital ingest", "Born digital ingest into Archivematica workflow"]
+  - ["Born digital ingest", "bornDigital"]
   - ["Automation Tools", "automationTools"]
   - ["ArchivesSpace DIP Upload", "archivesspaceDIPupload"]
   - ["PREMIS Rights", "premisRights"]
