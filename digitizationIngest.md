@@ -3,7 +3,6 @@ layout: docs
 title:  "Digitization Ingest"
 ---
 
-# Introduction
 
 The purpose of this guide is to detail the Archivematica Ingest workflow for processed born digital materials. Processed digital materials are digital objects that have been described in a finding aid.
 

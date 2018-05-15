@@ -3,8 +3,6 @@ layout: docs
 title:  "Archivematica/ArchivesSpace DIP Upload"
 ---
 
-# Archivematica/ArchivesSpace DIP Upload
-
 ## CSV Structure
 
 CSV for automated matching

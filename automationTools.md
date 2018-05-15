@@ -3,8 +3,6 @@ layout: docs
 title:  "Automation Tools"
 ---
 
-# Automation Tools
-
 The Automation Tools project is a set of python scripts, that are designed to automate the processing of transfers in an Archivematica pipeline.
 
 ## Installation
