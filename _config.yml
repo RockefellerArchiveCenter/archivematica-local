@@ -12,7 +12,6 @@ pages:
   - ["Born digital ingest", "Born digital ingest into Archivematica workflow"]
   - ["Automation Tools", "automationTools"]
   - ["ArchivesSpace DIP Upload", "archivesspaceDIPupload"]
-  - ["Dashboard Administration Settings", "administrationSettings"]
   - ["PREMIS Rights", "premisRights"]
   - ["Processing Configuration", "processingConfiguration"]
   - ["Storage Service", "storageService"]
