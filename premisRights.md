@@ -1,3 +1,8 @@
+---
+layout: docs
+title:  "PREMIS Rights"
+---
+
 #### Add rights information
 
 1.  Go go the SIP detail panel and click "Add" under "Rights"
