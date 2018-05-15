@@ -6,7 +6,7 @@ title:  "Born digital ingest into Archivematica workflow"
 The purpose of this guide is to detail the Archivematica Ingest workflow for processed born digital materials. Processed digital materials are digital objects that have been described in a finding aid.
 
 
-## Step 1: Export files & group into SIPs
+## Export files & group into SIPs
 
 
 ### ArchivesSpace DIP Upload Administrative Settings
@@ -38,11 +38,10 @@ Agent Identifier Value: NNttR
 
 Agent Name: Rockefeller Archive Center
 
-Step 4: Transfer to Archivematica & create SIP
-==============================================
+## Transfer to Archivematica & create SIP
 
-Overview
---------
+### Overview
+
 
 The ingest of files through Archivematica into our storage system involves several steps. The first step is the Transfer process, which transforms any set of digital objects and/or directories into a SIP
 (Submission Information Package). In the Transfer tab of the Dashboard,
