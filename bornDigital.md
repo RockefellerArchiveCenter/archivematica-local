@@ -11,9 +11,6 @@ The purpose of this guide is to detail the Archivematica Ingest workflow for pro
 
 ### ArchivesSpace DIP Upload Administrative Settings
 
-More information can be found at
-[*https://www.archivematica.org/en/docs/archivematica-1.4/user-manual/access/archivists-toolkit/\#administrative-settings*](https://www.archivematica.org/en/docs/archivematica-1.4/user-manual/access/archivists-toolkit/#administrative-settings)
-
 -   ArchivesSpace host, backend port, administrative user, password, URL prefix, and repository number will generally not change
 
 -   Restrictions apply should be set to "base on PREMIS"
