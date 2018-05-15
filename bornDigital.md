@@ -6,7 +6,7 @@ title:  "Born digital ingest into Archivematica workflow"
 The purpose of this guide is to detail the Archivematica Ingest workflow for processed born digital materials. Processed digital materials are digital objects that have been described in a finding aid.
 
 
-## Export files &amp; group into SIPs
+## Export files and group into SIPs
 
 
 ### ArchivesSpace DIP Upload Administrative Settings
@@ -38,7 +38,7 @@ Agent Identifier Value: NNttR
 
 Agent Name: Rockefeller Archive Center
 
-## Transfer to Archivematica & create SIP
+## Transfer to Archivematica and create SIP
 
 ### Overview
 
