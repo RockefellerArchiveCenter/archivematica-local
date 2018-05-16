@@ -1,14 +1,12 @@
 ---
 layout: docs
-title:  "Archivematica/ArchivesSpace DIP Upload"
+title:  "Set up for Transfer to Archivematica"
 ---
 
+## Archivematica/ArchivesSpace DIP Upload
 
-
-## CSV Structure
-
-CSV for automated matching
---------------------------
+### CSV for automated matching
+#### CSV Structure
 
 At this stage, you can create a CSV to match files with their parent components in ArchivesSpace. There should be one CSV per SIP, with the filename "archivesspaceids.csv" in the /metadata directory. The first column contains the filenames and the second column contains the refid of the component the file needs to be linked to.There is no header row.
 

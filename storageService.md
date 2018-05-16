@@ -3,6 +3,8 @@ layout: docs
 title:  "Storage Service"
 ---
 
+## Overview
+
 The Archivematica Storage Service allows the configuration of storage spaces associated with multiple Archivematica pipelines. It allows a storage administrator to configure what storage is available to each Archivematica installation, both locally and remote.
 
 The Storage Service is the mechanism by which Archivematica is able to store packages and manage file locations, such as transfer source locations. Responsibilies for the Storage Service should be assigned to one Administrative user who will be responsible for managing locations and AIP deletion requests.
