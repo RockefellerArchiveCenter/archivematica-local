@@ -7,11 +7,6 @@ title: "Guide to Using Archivematica at the RAC"
 description: "Local Archivematica documentation"
 pages:
   - ["Guide to Using Archivematica at the RAC", "index"]
-  - ["Transfer Structure", "transferStructure"]
-  - ["Digitization Ingest", "digitizationIngest"]
-  - ["Born digital ingest", "bornDigital"]
-  - ["Automation Tools", "automationTools"]
-  - ["ArchivesSpace DIP Upload", "archivesspaceDIPupload"]
-  - ["PREMIS Rights", "premisRights"]
-  - ["Processing Configuration", "processingConfiguration"]
-  - ["Storage Service", "storageService"]
+  - ["Administration", "administration"]
+  - ["Transfer and Setup", "transferAndSetup"]
+  - ["Workflows by Content Type", "workflows"]
