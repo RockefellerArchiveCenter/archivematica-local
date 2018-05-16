@@ -5,18 +5,15 @@ title:  "Workflows by Content Type"
 
 ## Digitized Materials
 
-## Create transfer ready for ingest
+1. Copy files to structured transfer.
 
-### Copy files to structured transfer
+2. Create ArchivesSpace IDs CSV.
 
-### Create ArchivesSpace IDs CSV
+3. Create PREMIS CSV.
 
-### Create PREMIS CSV
+4. Move transfer to Transfer Source.
 
-## Copy transfer to Transfer Source
+## Born Digital
 
-## Ingest into Archivematica
 
-### Transfer Tab
-
-### Ingest Tab
+## Audiovisual
