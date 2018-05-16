@@ -12,18 +12,18 @@ While Archivematica will restructure a directory for basic transfers, some trans
 *  transfers with manually normalized files
 *  transfers with submission documention
 
-As these are the vast majority of our use cases, all transfers ingested into Archivematica should be in a structured directory. A structured directory includes the following:
+As these are the vast majority of our use cases, all transfers ingested into Archivematica should be in a structured directory. A structured directory includes the following subdirectories:
 
-*  objects: The objects directory contains the digital objects that are to be preserved. You can create subdirectories within objects if desired.
-*  metadata: The metadata directory contains the checksum, the METS file, and a submissionDocumentation subfolder, which can be used for transfer forms, donation agreements or any other documents that relate to the acquisition of the records.
-*  logs: The logs directory will eventually contain logs generated when processing the transfer in Archivematica.
+*  **objects**: The objects directory contains the digital objects that are to be preserved. You can create subdirectories within objects if desired.
+*  **metadata**: The metadata directory contains the checksum, the METS file, and a submissionDocumentation subfolder, which can be used for transfer forms, donation agreements or any other documents that relate to the acquisition of the records.
+*  **logs**: The logs directory will eventually contain logs generated when processing the transfer in Archivematica.
 
 ## Digitized
 
 Master files are in directory "Master," master edited files are in directory "Master Edited," and serviced edited files are in directory "Service Edited." The output should look like either of the following (depending on access format):
 
 
-**Access format: concatenated PDF**
+### Access format: concatenated PDF
 
 ```
 /archivematica_sip_examplerefid
@@ -42,7 +42,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
       examplerefid_003.tif
 ```
 
-**Access format: JPGs**
+### Access format: JPGs
 
 ```
 /archivematica_sip_examplerefid
@@ -63,6 +63,9 @@ Master files are in directory "Master," master edited files are in directory "Ma
 ```
 
 ## Legacy Born Digital
+
+### With Manually Normalized Files
+
 ```
   /top-level
     /objects
@@ -79,6 +82,8 @@ Master files are in directory "Master," master edited files are in directory "Ma
         FTKExportSummary1.txt
     /logs
 ```
+
+### Without Manually Normalized Files
 
 ```
  /top-level                                                               
