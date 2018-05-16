@@ -3,6 +3,22 @@ layout: docs
 title:  "Set up for Transfer to Archivematica"
 ---
 
+## Create transfer ready for ingest
+
+### Copy files to structured transfer
+
+### Create ArchivesSpace IDs CSV
+
+### Create PREMIS CSV
+
+## Copy transfer to Transfer Source
+
+## Ingest into Archivematica
+
+### Transfer Tab
+
+### Ingest Tab
+
 ## Archivematica/ArchivesSpace DIP Upload
 
 ### CSV for automated matching
