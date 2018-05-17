@@ -3,7 +3,7 @@ type: "docs"
 tags:
   - "digital preservation"
   - "archivematica"
-title: "Guide to Using Archivematica at the RAC"
+title: "Guide to Using Archivematica"
 description: "Local Archivematica documentation"
 pages:
   - ["Archivematica Overview", "index"]
