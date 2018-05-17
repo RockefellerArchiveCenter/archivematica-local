@@ -99,7 +99,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
    /logs                                                                    
 ```
 
-## Including Metadata in the Transfer
+## Transfer Metadata
 
 Generally, two metadata files are included in RAC transfers. These are:
 
@@ -137,6 +137,5 @@ For example:
 | r2fp9q4b_003.tif | donor |  |  |  | 1/1/90 | open |  |  | Donor note | disseminate | Allow | 1/1/90 | open | Grant note |  |  |  |
 | service | copyright | copyrighted | 3/15/18 | us | 1/1/00 | open |  |  | Copyright note | publish | Allow | 1/1/00 | open | Grant note |  |  |  |
 | service | donor |  |  |  | 1/1/90 | open |  |  | Donor note | disseminate | Allow | 1/1/90 | open | Grant note |  |  |  |
-|  |
 
-## Copy transfer to Transfer Source	
+## Move transfer to Transfer Source	
