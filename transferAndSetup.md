@@ -135,4 +135,6 @@ For example:
 | r2fp9q4b_003.tif | donor |  |  |  | 1/1/90 | open |  |  | Donor note | disseminate | Allow | 1/1/90 | open | Grant note |  |  |  |
 
 
-## Move transfer to Transfer Source	
+## Move transfer to Transfer Source
+
+Transfers must be placed in the Transfer Source in order to be ingested (either manually or automatically) into Archivematica. More information on the Transfer Source can be found in the Storage Service documentation.
