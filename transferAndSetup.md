@@ -21,12 +21,12 @@ As these are the vast majority of our use cases, all transfers ingested into Arc
 *  **metadata**: The metadata directory contains the checksum, the METS file, and a submissionDocumentation subfolder, which can be used for transfer forms, donation agreements or any other documents that relate to the acquisition of the records.
 *  **logs**: The logs directory will eventually contain logs generated when processing the transfer in Archivematica.
 
-## Digitized
+### Digitized
 
 Master files are in directory "Master," master edited files are in directory "Master Edited," and serviced edited files are in directory "Service Edited." The output should look like either of the following (depending on access format):
 
 
-### Access format: concatenated PDF
+#### Access format: concatenated PDF
 
 ```
 /archivematica_sip_examplerefid
@@ -45,7 +45,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
       examplerefid_003.tif
 ```
 
-### Access format: JPGs
+#### Access format: JPGs
 
 ```
 /archivematica_sip_examplerefid
@@ -65,9 +65,9 @@ Master files are in directory "Master," master edited files are in directory "Ma
       examplerefid_003.tif
 ```
 
-## Legacy Born Digital
+### Legacy Born Digital
 
-### With Manually Normalized Files
+#### With Manually Normalized Files
 
 ```
   /top-level
@@ -86,7 +86,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
     /logs
 ```
 
-### Without Manually Normalized Files
+#### Without Manually Normalized Files
 
 ```
  /top-level                                                               
@@ -119,7 +119,7 @@ For example:
 
 
 
-## Manual Matching
+### Manual Matching
 
 \*\*\*file names are sanitized during ingest--so if the original filename has spaces or special characters in it, they are now underscores--this affects filtering objects
 
@@ -139,14 +139,14 @@ For example:
 5.  Above, shown are pairs that have been created using this process. To delete a pair (i.e. make the digital object available to be linked to a different description), click the delete icon to the right of the pair. Once the mapping is completed, click “Save”. You will be asked to confirm the save, and then the mapping screen will close and you will be returned to the ingest tab in the Archivematica dashboard.
 
 
-## Configuration
+### Configuration
 Before ingesting digital objects destined for ArchivesSpace, ensure that the ArchivesSpace DIP upload settings in the administration tab of the dashboard have been set.
 
 These settings should be created and saved before digital objects destined for upload to ArchivesSpace are processed. Note that these can be set once and used for processing any number of transfers (i.e. they do not need to be re-set for each transfer). In order to save changes to the ArchivesSpace DIP upload configuration, you must enter the password before clicking save. Note that Archivematica will *not* show you an error if the password is not entered.
 
-## Data mapping
+### Data mapping
 
-### Basic information
+#### Basic information
 
 Title: Derive from original filename of digital object.
 Identifier: Populate with Archivematica DIP URI without digital object filename.
@@ -155,7 +155,7 @@ Type: Populate with value from Object Type field in Archivematica administration
 Language: Derive from parent component in ArchivesSpace.
 Restrictions?: Set as TRUE or FALSE based on PREMIS statement (see Restrictions: Base on PREMIS below).
 
-### File Version
+#### File Version
 
 File URI: Populate with URL prefix from URI Prefix field in  Archivematica administration settings, plus file UUID and filename, for example: http://storage.rockarch.org/[UUID]-filename.
 Use Statement: Populate with value from Use Statement field in Archivematica administration settings.
@@ -165,14 +165,14 @@ File Format Name: Populate with DIP digital object file format name as identifie
 File Format Version: Populate with DIP digital object file format version as identified by Archivematica.
 File Size: Populate with DIP digital object file size measured in bytes, as identified by Archivematica.
 
-### Notes
+#### Notes
 
 Conditions Governing Access note: Derive from PREMIS <rightsGrantedNote> (see Restrictions: Base on PREMIS below). If there is no content in <rightsGrantedNote>, populate with value from Conditions Governing Access field in Archivematica administration settings. If no data is entered in this field, do not add note.
 Conditions Governing Use note: Derive from PREMIS <rightsGrantedNote> (see Restrictions: Base on PREMIS below). If there is no content in <rightsGrantedNote>, populate with value from Conditions Governing Use field in Archivematica administration settings. If no data is entered in this field, do not add note.
 Existence and Location of Originals note: automatically populate with Archivematica AIP UUID
 If specified in administration settings, Any other notes attached to the parent component in ArchivesSpace should also be attached to the digital object record.
 
-### Agents
+#### Agents
 
 Any agents linked to the parent component in ArchivesSpace should be linked to the digital object record, if specified in administration settings.
 Agent records for agents recorded in Archivematica should be created and linked to the digital object record, if specified in administration settings.
