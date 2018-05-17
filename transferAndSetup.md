@@ -79,8 +79,6 @@ Master files are in directory "Master," master edited files are in directory "Ma
           digital-object1.docx
     /metadata
       archivesspaceids.csv
-      /submissionDocumentation
-        FTKExportSummary1.txt
     /logs
 ```
 
@@ -94,8 +92,6 @@ Master files are in directory "Master," master edited files are in directory "Ma
      digital-object3.docx                                                     
    /metadata                                                                
      archivesspaceids.csv                                                    
-     /submissionDocumentation                                                 
-       FTKExportSummary1.txt                                                                                                                        
    /logs                                                                    
 ```
 
