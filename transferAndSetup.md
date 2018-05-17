@@ -108,12 +108,9 @@ Generally, two metadata files are included in RAC transfers. These are:
 
 ### ArchivesSpace IDs CSV
 
-In order to automatically match access files with components in 
+In order to automatically match access files with components in ArchivesSpace, a CSV file with the filename "archivesspaceids.csv" must be included in the `/metadata` directory in the transfer. The first column contains the filenames and the second column contains the refid of the component the file needs to be linked to. There is no header row.
 
-At this stage, you can create a CSV to match files with their parent components in ArchivesSpace. There should be one CSV per SIP, with the filename "archivesspaceids.csv" in the /metadata directory. The first column contains the filenames and the second column contains the refid of the component the file needs to be linked to.There is no header row.
-
-Note that filenames, including file extensions, are case sensitive, and should contain the full path. If files were manually normalized, the filepath should be for the original filename, not the file in the
-/access directory.
+Note that filenames, including file extensions, are case sensitive, and should contain the full path. For born digital ingests, if files were manually normalized, the filepath should be for the original filename, not the file in the `/access` directory.
 
 For example:
 
@@ -122,7 +119,7 @@ For example:
 
 ### PREMIS CSV
 
-The rights.csv file is parsed by the job “Load Rights” within the “Characterize and Extract Metadata” microservice run during transfer.
+The `rights.csv` file is parsed by the job “Load Rights” within the “Characterize and Extract Metadata” microservice run during transfer.
 
 For example:
 
