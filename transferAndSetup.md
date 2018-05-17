@@ -101,7 +101,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
 
 ## Archivematica/ArchivesSpace DIP Upload
 
-### CSV for automated matching
+### Automated Matching
 
 #### CSV Structure
 
@@ -112,9 +112,7 @@ Note that filenames, including file extensions, are case sensitive, and should c
 
 For example:
 
-  -----------------------------------------------------
-  data/objects/Youth Organizations.doc   ref5086\_rts
-  -------------------------------------- --------------
+data/objects/Youth Organizations.doc  | ref5086\_rts 
 
 
 
@@ -182,24 +180,6 @@ Create link to parent component in ArchivesSpace
 
 ## Create PREMIS CSV
 
-### Restrictions: Base on PREMIS
 
-### Disseminate
-
-If PREMIS <act> = Disseminate and PREMIS <restriction> = Allow, Restrictions? = FALSE
-If PREMIS <act> = Disseminate and PREMIS <restriction> = Conditional, Restrictions? = TRUE
-If PREMIS <act> = Disseminate and PREMIS <restriction> = Disallow, Restrictions? = TRUE
-If PREMIS <act> = Disseminate, populate Conditions Governing Access note with contents of PREMIS rightsGrantedNote
-When Restrictions?=TRUE, both XLink Attribute Actuate and XLink Attribute Show will be set to “none.”
-
-### Publish
-
-If PREMIS <act> = Publish, populate ConditionsGoverningUse with contents of PREMIS rightsGrantedNote
-
-### Publish: Base on PREMIS
-
-If PREMIS <act> = Disseminate and PREMIS <restriction> = Allow, Publish = TRUE
-If PREMIS <act> = Disseminate and PREMIS <restriction> = Conditional, Publish = FALSE
-If PREMIS <act> = Disseminate and PREMIS <restriction> = Disallow, Publish = FALSE
 
 ## Copy transfer to Transfer Source	
