@@ -5,6 +5,25 @@ title:  "Ingest"
 
 ## Manual Ingest
 
+### Manual Matching
+
+\*\*\*file names are sanitized during ingest--so if the original filename has spaces or special characters in it, they are now underscores--this affects filtering objects
+
+\*\*\*filtering objects is not case sensitive
+
+\*\*\*"select all" selects \*everything\*, not just files that are currently visible (i.e., filtered)
+
+1.  At the DIP upload micro-service in the Archivematica dashboard, the user can choose to upload the DIP to ArchivesSpace. Archivematica then loads a screen listing all ArchivesSpace resource records.
+    > The user navigates to a specific collection either by searching for it or by navigating to it using the screen pager. To start mapping files in the DIP to resource components in a given collection, the user clicks the “Assign objects” button to the right of the collection title. To drill down to lower levels of the collection, the user clicks on the collection title.
+
+2.  This opens the DIP object pairing screen which lists the objects in the DIP and Resources in ArchivesSpace to which the objects can be linked:
+
+3.  The user selects one or more objects, then clicks on the appropriate resource. This action highlights the resource; to pair the objects with their resources, click on the “Pair” button on the top right of the screen or press Enter on your keyboard:
+
+4.  Note that an object that has already been paired with a resource is greyed out and cannot be selected again, while a resource that has already been paired with an object changes font colour from black to red, but can still have more objects paired with it.
+
+5.  Above, shown are pairs that have been created using this process. To delete a pair (i.e. make the digital object available to be linked to a different description), click the delete icon to the right of the pair. Once the mapping is completed, click “Save”. You will be asked to confirm the save, and then the mapping screen will close and you will be returned to the ingest tab in the Archivematica dashboard.
+
 ## Ingest Using Automation Tools
 
 `transfers/transfer.py` is used to prepare transfers, move them into the pipelines processing location, and take actions when user input is required.
