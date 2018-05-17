@@ -105,9 +105,7 @@ Generally, two metadata files are included in RAC transfers. These are:
 
 * `archivesspaceids.csv`:
 * `rights.csv`: 
-## Archivematica/ArchivesSpace DIP Upload
-
-### Automated Matching
+### ArchivesSpace IDs CSV
 
 In order to automatically match access files with components in 
 
@@ -121,11 +119,7 @@ For example:
 | data/objects/Youth Organizations.doc  | ref5086\_rts |
 
 
-
-
-
-
-## PREMIS CSV
+### PREMIS CSV
 
 
 
