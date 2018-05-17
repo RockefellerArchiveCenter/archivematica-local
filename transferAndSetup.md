@@ -103,8 +103,8 @@ Master files are in directory "Master," master edited files are in directory "Ma
 
 Generally, two metadata files are included in RAC transfers. These are:
 
-* `archivesspaceids.csv`:
-* `rights.csv`: 
+* `archivesspaceids.csv`: This file contains information to automatically match descriptive information in ArchivesSpace to access objects that are in the Archivematica DIP.
+* `rights.csv`: This file contains PREMIS rights information that is included in the METS file in the AIP. This information is also used in the ArchivesSpace DIP upload integration.
 
 ### ArchivesSpace IDs CSV
 
@@ -121,6 +121,8 @@ For example:
 
 
 ### PREMIS CSV
+
+The rights.csv file is parsed by the job “Load Rights” within the “Characterize and Extract Metadata” microservice run during transfer.
 
 For example:
 
