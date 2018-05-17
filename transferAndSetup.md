@@ -103,7 +103,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
 
 ### Automated Matching
 
-#### CSV Structure
+In order to automatically match access files with components in 
 
 At this stage, you can create a CSV to match files with their parent components in ArchivesSpace. There should be one CSV per SIP, with the filename "archivesspaceids.csv" in the /metadata directory. The first column contains the filenames and the second column contains the refid of the component the file needs to be linked to.There is no header row.
 
@@ -112,7 +112,7 @@ Note that filenames, including file extensions, are case sensitive, and should c
 
 For example:
 
-data/objects/Youth Organizations.doc  | ref5086\_rts 
+| data/objects/Youth Organizations.doc  | ref5086\_rts |
 
 
 
@@ -178,7 +178,7 @@ Any subjects linked to the parent component in ArchivesSpace should be linked to
 Record Link
 Create link to parent component in ArchivesSpace
 
-## Create PREMIS CSV
+## PREMIS CSV
 
 
 
