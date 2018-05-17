@@ -6,7 +6,7 @@ tags:
 title: "Guide to Using Archivematica at the RAC"
 description: "Local Archivematica documentation"
 pages:
-  - ["Guide to Using Archivematica at the RAC", "index"]
-  - ["Administration", "administration"]
+  - ["Archivematica Overview", "index"]
   - ["Transfer and Setup", "transferAndSetup"]
   - ["Workflows by Content Type", "workflows"]
+  - ["Administration", "administration"]
