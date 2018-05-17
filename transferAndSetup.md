@@ -4,9 +4,7 @@ title:  "Set up for Transfer to Archivematica"
 ---
 
 
-## Copy transfer to Transfer Source
-
-## Structuring the transfer 
+## Transfer Structure 
 
 While Archivematica will restructure a directory for basic transfers, some transfer types require a directory structure that is compliant with Archivematica's SIP directory structure. A structured directory is required for the following types of transfers:
 
@@ -21,7 +19,7 @@ As these are the vast majority of our use cases, all transfers ingested into Arc
 *  **metadata**: The metadata directory contains the checksum, the METS file, and a submissionDocumentation subfolder, which can be used for transfer forms, donation agreements or any other documents that relate to the acquisition of the records.
 *  **logs**: The logs directory will eventually contain logs generated when processing the transfer in Archivematica.
 
-### Digitized
+### Digitized Material
 
 Master files are in directory "Master," master edited files are in directory "Master Edited," and serviced edited files are in directory "Service Edited." The output should look like either of the following (depending on access format):
 
@@ -104,6 +102,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
 ## Archivematica/ArchivesSpace DIP Upload
 
 ### CSV for automated matching
+
 #### CSV Structure
 
 At this stage, you can create a CSV to match files with their parent components in ArchivesSpace. There should be one CSV per SIP, with the filename "archivesspaceids.csv" in the /metadata directory. The first column contains the filenames and the second column contains the refid of the component the file needs to be linked to.There is no header row.
@@ -197,8 +196,10 @@ When Restrictions?=TRUE, both XLink Attribute Actuate and XLink Attribute Show w
 
 If PREMIS <act> = Publish, populate ConditionsGoverningUse with contents of PREMIS rightsGrantedNote
 
-## Publish: Base on PREMIS
+### Publish: Base on PREMIS
 
 If PREMIS <act> = Disseminate and PREMIS <restriction> = Allow, Publish = TRUE
 If PREMIS <act> = Disseminate and PREMIS <restriction> = Conditional, Publish = FALSE
 If PREMIS <act> = Disseminate and PREMIS <restriction> = Disallow, Publish = FALSE
+
+## Copy transfer to Transfer Source	
