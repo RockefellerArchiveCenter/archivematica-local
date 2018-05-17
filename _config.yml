@@ -8,6 +8,7 @@ description: "Local Archivematica documentation"
 pages:
   - ["Archivematica Overview", "index"]
   - ["Transfer and Setup", "transferAndSetup"]
+  - ["Ingest", "ingest"]
   - ["Workflows by Content Type", "workflows"]
   - ["Administration", "administration"]
   - ["Appendix", "appendix"]
