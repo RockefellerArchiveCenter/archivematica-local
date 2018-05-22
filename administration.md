@@ -2,11 +2,6 @@
 layout: docs
 title:  "Administration"
 ---
-## ArchivesSpace DIP Upload
-Before ingesting digital objects destined for ArchivesSpace, ensure that the ArchivesSpace DIP upload settings in the administration tab of the dashboard have been set.
-
-These settings should be created and saved before digital objects destined for upload to ArchivesSpace are processed. Note that these can be set once and used for processing any number of transfers (i.e. they do not need to be re-set for each transfer). In order to save changes to the ArchivesSpace DIP upload configuration, you must enter the password before clicking save. Note that Archivematica will *not* show you an error if the password is not entered.
-
 ## Processing Configuration
 
 ### Digitized
@@ -60,6 +55,12 @@ These should be the default settings for born digital materials:
 |  Select compression level                                                         | ✓ | 5 - normal compression mode |
 |  Store AIP location                                                               | ✓ | Store AIP in standard Archivematica directory |
 |  Store DIP location                                                               | ✓ | Store DIP in standard Archivematica directory |
+
+## ArchivesSpace DIP Upload
+Before ingesting digital objects destined for ArchivesSpace, ensure that the ArchivesSpace DIP upload settings in the administration tab of the dashboard have been set.
+
+These settings should be created and saved before digital objects destined for upload to ArchivesSpace are processed. Note that these can be set once and used for processing any number of transfers (i.e. they do not need to be re-set for each transfer). In order to save changes to the ArchivesSpace DIP upload configuration, you must enter the password before clicking save. Note that Archivematica will *not* show you an error if the password is not entered.
+
 
 ## Storage Service
 
