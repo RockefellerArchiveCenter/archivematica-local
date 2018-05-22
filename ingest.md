@@ -5,6 +5,18 @@ title:  "Ingest"
 
 ## Manual Ingest
 
+### Start the Ingest
+
+1. In the **Transfer tab**, select the appropriate transfer type from the drop down menu. Enter the name of the transfer in the *Transfer name* field.
+
+2. To select the transfer directory, click *Browse*. Select the directory to ingest into Archivematica, then click *Add*.
+
+3. Click *Start Transfer*.
+
+4. When *Job: Approve standard transfer*, appears on the screen, select *Approve transfer*.
+
+5. Complete any microservice that requires human intervention. When *Micro-service: Create SIP from Transfer* has completed, proceed to the **Ingest tab**.
+
 ### Manual Matching
 
 \*\*\*file names are sanitized during ingest--so if the original filename has spaces or special characters in it, they are now underscores--this affects filtering objects
