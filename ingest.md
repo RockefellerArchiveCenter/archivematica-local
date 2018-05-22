@@ -5,7 +5,7 @@ title:  "Ingest"
 
 ## Manual Ingest
 
-### Start the Ingest
+### Transfer and Ingest
 
 1. In the **Transfer tab**, select the appropriate transfer type from the drop down menu. Enter the name of the transfer in the *Transfer name* field.
 
@@ -16,6 +16,8 @@ title:  "Ingest"
 4. When *Job: Approve standard transfer*, appears on the screen, select *Approve transfer*.
 
 5. Complete any microservice that requires human intervention. When *Micro-service: Create SIP from Transfer* has completed, proceed to the **Ingest tab**.
+
+6. In in the **Ingest tab**, complete any microservice that requires human intervention. If a DIP will be created, in *Job: Upload DIP*, select *Upload DIP to ArchivesSpace* then follow the instructions in Manual Matching.
 
 ### Manual Matching
 
