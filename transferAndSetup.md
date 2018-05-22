@@ -19,6 +19,8 @@ As these are the vast majority of our use cases, all transfers ingested into Arc
 *  **metadata**: The metadata directory contains the checksum, the METS file, and a submissionDocumentation subfolder, which can be used for transfer forms, donation agreements or any other documents that relate to the acquisition of the records.
 *  **logs**: The logs directory will eventually contain logs generated when processing the transfer in Archivematica.
 
+The following directory structure examples are for Standard Transfers, which will be used the majority of the time. Transfers can also be zipped or unzipped bags, in which case all subdirectories should be in the `/data` directory.
+
 ### Digitized Material
 
 Master files are in directory "Master," master edited files are in directory "Master Edited," and serviced edited files are in directory "Service Edited." The output should look like either of the following (depending on access format):
