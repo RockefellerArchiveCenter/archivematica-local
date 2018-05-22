@@ -3,6 +3,7 @@ layout: docs
 title:  "Administration"
 ---
 ## Processing Configuration
+The processing configuration administration page of the dashboard allows users to configure the job decision points presented by Archivematica during transfer and ingest. This screen provides you with an easy form to configure the default processingMCP.xml that governs these decisions. When you change the options using the web interface the necessary XML will be written behind the scenes.
 
 ### Digitized
 
