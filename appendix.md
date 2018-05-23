@@ -11,7 +11,7 @@ title:  "Appendix"
 
 *  **Title:** Derive from original filename of digital object.
 *  **Identifier:** Populate with Archivematica DIP URI without digital object filename.
-*  **Publish: Set as TRUE or FALSE based on PREMIS statement (see Publish:** Base on PREMIS below).
+*  **Publish:** Set as TRUE or FALSE based on PREMIS statement (see Publish: Base on PREMIS below).
 *  **Type:** Populate with value from Object Type field in Archivematica administration settings. If no data entered in this field, leave empty.
 *  **Language:** Derive from parent component in ArchivesSpace.
 *  **Restrictions?: Set as TRUE or FALSE based on PREMIS statement (see Restrictions:** Base on PREMIS below).
