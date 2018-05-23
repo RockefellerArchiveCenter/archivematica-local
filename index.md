@@ -1,5 +1,6 @@
 ---
-layout: docs title:  "Rockefeller Archive Center Archivematica"
+layout: docs
+title:  "Rockefeller Archive Center Archivematica"
 ---
 
 This is the Rockefeller Archive Center's local documentation for Archivematica.
