@@ -37,9 +37,12 @@
 
 *  Any agents linked to the parent component in ArchivesSpace should be linked to the digital object record, if specified in administration settings.
 *  Agent records for agents recorded in Archivematica should be created and linked to the digital object record, if specified in administration settings.
-*  Subjects
+
+
+#### Subjects
 *  Any subjects linked to the parent component in ArchivesSpace should be linked to the digital object record, if specified in administration settings.
-*  Record Link
+
+#### Record Link
 *  Create link to parent component in ArchivesSpace
 
 *  **### Restrictions:** Base on PREMIS
