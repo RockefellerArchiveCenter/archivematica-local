@@ -38,16 +38,15 @@
 *  Any agents linked to the parent component in ArchivesSpace should be linked to the digital object record, if specified in administration settings.
 *  Agent records for agents recorded in Archivematica should be created and linked to the digital object record, if specified in administration settings.
 
-
 #### Subjects
 *  Any subjects linked to the parent component in ArchivesSpace should be linked to the digital object record, if specified in administration settings.
 
 #### Record Link
 *  Create link to parent component in ArchivesSpace
 
-*  **### Restrictions:** Base on PREMIS
+### Restrictions: Base on PREMIS
 
-### Disseminate
+#### Disseminate
 
 *  If PREMIS <act> = Disseminate and PREMIS <restriction> = Allow, Restrictions? = FALSE
 *  If PREMIS <act> = Disseminate and PREMIS <restriction> = Conditional, Restrictions? = TRUE
@@ -55,11 +54,11 @@
 *  If PREMIS <act> = Disseminate, populate Conditions Governing Access note with contents of PREMIS rightsGrantedNote
 *  When Restrictions?=TRUE, both XLink Attribute Actuate and XLink Attribute Show will be set to “none.”
 
-### Publish
+#### Publish
 
 *  If PREMIS <act> = Publish, populate ConditionsGoverningUse with contents of PREMIS rightsGrantedNote
 
-*  **### Publish:** Base on PREMIS
+### Publish: Base on PREMIS
 
 *  If PREMIS <act> = Disseminate and PREMIS <restriction> = Allow, Publish = TRUE
 *  If PREMIS <act> = Disseminate and PREMIS <restriction> = Conditional, Publish = FALSE
