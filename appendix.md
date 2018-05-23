@@ -1,6 +1,6 @@
 ---
-*  **layout:** docs
-*  **title:**  "Appendix"
+layout: docs
+title:  "Appendix"
 ---
 
 ## PREMIS Mapping
