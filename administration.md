@@ -9,59 +9,66 @@ The processing configuration administration page of the dashboard allows users t
 
 These should be the default settings for digitized materials:
 
-|  Step                                                                          |  Action |
-|  --------------------------------------------------------------------------------- | --------------------------|
+|  Step                                                                            |  Action |
+|  ------------------------------------------------------------------------------- | ------- |
 |  Assign UUIDs to directories                                                     | No |
 |  Send transfer to quarantine                                                     | No |
+|  Remove from quarantine after \_\_ days                                          | 28 |
 |  Generate transfer structure report                                              | No |
-|  Select file format identification command (Transfer)                            | File extension |
+|  Select file format identification command (Transfer)                            | Skip file identification |
 |  Extract packages                                                                | No |
 |  Delete packages after extraction                                                | Yes |
-| Perform policy checks on originals                   | No |
+| Perform policy checks on originals                                               | No |
 |  Examine contents                                                                | Skip examine contents |
 |  Create SIP(s)                                                                   | Create single SIP and continue processing |
 |  Select file format identification command (Ingest)                              | Use existing data |
 |  Normalize                                                                       | Do not normalize |
 |  Approve normalization                                                           | None |
-| Perform policy checks on preservation derivatives                   | No |
-| Perform policy checks on access derivatives                   | No |
-| Bindd PIDs | No |
-| Document empty directories | No |
+| Perform policy checks on preservation derivatives                                | No |
+| Perform policy checks on access derivatives                                      | No |
+| Bind PIDs                                                                        | No |
+| Document empty directories                                                       | No |
 |  Reminder: add metadata if desired                                               | Continue |
-|  Store AIP                                                                       | none |
 |  Transcribe files (OCR)                                                          | No |
-|  Remove from quarantine after \_\_ days                                          | n/a |
-|  Create SIP(s)                                                                   | Create single SIP and continue processing |
 |  Select file format identification command (Submission documentation & metadata) | File extension |
 |  Select compression algorithm                                                    | 7z using bzip2 |
 |  Select compression level                                                        | 5 - normal compression mode |
+|  Store AIP                                                                       | none |
 |  Store AIP location                                                              | Store AIP in standard Archivematica directory |
+|  Store DIP                                                                       | none |
 |  Store DIP location                                                              | Store DIP in standard Archivematica directory |
 
 ### Born Digital
 
 These should be the default settings for born digital materials:
 
-|  Step                                                                          |  Action |
-|  --------------------------------------------------------------------------------- | --------------------------|
-|  Send transfer to quarantine                                                     |  No |
-|  Approve normalization                                                           | Yes |
-|  Store AIP                                                                       | n/a |
-|  Transcribe files (OCR)                                                          | No |
+|  Step                                                                            |  Action |
+|  ------------------------------------------------------------------------------- | ------- |
+|  Assign UUIDs to directories                                                     | No |
+|  Send transfer to quarantine                                                     | No |
+|  Remove from quarantine after \_\_ days                                          | 28 |
 |  Generate transfer structure report                                              | No |
-|  Remove from quarantine after \_\_ days                                          | n/a |
-|  Create SIP(s)                                                                   | Create single SIP and continue processing |
+|  Select file format identification command (Transfer)                            | File extension |
 |  Extract packages                                                                | No |
-|  Normalize                                                                       | Normalize for preservation and access |
-|  Reminder: add metadata if desired                                               | n/a |
-|  Examine contents                                                                | Skip examine contents |
-|  Select file format identification command (Transfer)                            | Fido version 1 PUID |
-|  Select file format identification command (Ingest)                              | Use existing data |
-|  Select file format identification command (Submission documentation & metadata) | File extension |
 |  Delete packages after extraction                                                | Yes |
+| Perform policy checks on originals                                               | No |
+|  Examine contents                                                                | Skip examine contents |
+|  Create SIP(s)                                                                   | Create single SIP and continue processing |
+|  Select file format identification command (Ingest)                              | Identify using Fido |
+|  Normalize                                                                       | Normalize for preservation and access |
+|  Approve normalization                                                           | Yes |
+| Perform policy checks on preservation derivatives                                | No |
+| Perform policy checks on access derivatives                                      | No |
+| Bind PIDs                                                                        | No |
+| Document empty directories                                                       | No |
+|  Reminder: add metadata if desired                                               | Continue |
+|  Transcribe files (OCR)                                                          | No |
+|  Select file format identification command (Submission documentation & metadata) | File extension |
 |  Select compression algorithm                                                    | 7z using bzip2 |
 |  Select compression level                                                        | 5 - normal compression mode |
+|  Store AIP                                                                       | none |
 |  Store AIP location                                                              | Store AIP in standard Archivematica directory |
+|  Store DIP                                                                       | none |
 |  Store DIP location                                                              | Store DIP in standard Archivematica directory |
 
 ## ArchivesSpace DIP Upload
