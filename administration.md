@@ -5,6 +5,8 @@ title:  "Administration"
 ## Processing Configuration
 The processing configuration administration page of the dashboard allows users to configure the job decision points presented by Archivematica during transfer and ingest. This screen provides you with an easy form to configure the default processingMCP.xml that governs these decisions. When you change the options using the web interface the necessary XML will be written behind the scenes.
 
+For the processing configuring for each workflow, please see the appendix.
+
 ## ArchivesSpace DIP Upload
 Before ingesting digital objects destined for ArchivesSpace, ensure that the ArchivesSpace DIP upload settings in the administration tab of the dashboard have been set.
 
