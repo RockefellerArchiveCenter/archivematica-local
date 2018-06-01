@@ -2,12 +2,21 @@
 layout: docs
 title:  "Administration"
 ---
-## Processing Configuration
+## Administration Tab in Dashboard
+
+### Processing Configuration
 The processing configuration administration page of the dashboard allows users to configure the job decision points presented by Archivematica during transfer and ingest. This screen provides you with an easy form to configure the default processingMCP.xml that governs these decisions. When you change the options using the web interface the necessary XML will be written behind the scenes.
 
 For the processing configuring for each workflow, please see the appendix.
 
-## ArchivesSpace DIP Upload
+### Failures
+Failed ingests can be viewed and deleted here.
+
+### Locations
+The  transfer source locations and AIP storage locations can be viewed in the Administration tab, but are managed in the Storage Service. The processing storage usage can be managed in the Administration tab.
+
+
+### DIP Upload (ArchivesSpace)
 Before ingesting digital objects destined for ArchivesSpace, ensure that the ArchivesSpace DIP upload settings in the administration tab of the dashboard have been set.
 
 These settings should be created and saved before digital objects destined for upload to ArchivesSpace are processed. Note that these can be set once and used for processing any number of transfers (i.e. they do not need to be re-set for each transfer). In order to save changes to the ArchivesSpace DIP upload configuration, you must enter the password before clicking save. Note that Archivematica will *not* show you an error if the password is not entered.
