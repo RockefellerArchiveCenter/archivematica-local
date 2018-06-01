@@ -28,7 +28,7 @@ In order to save changes to the ArchivesSpace DIP upload configuration, you must
 The development dashboard should use the ArchivesSpace development IP address, and the production dashboard should use the ArchivesSpace productin IP address.
 
 ### PREMIS agent
-
+The PREMIS agent information is used in the METS files created by Archivematica to identify the agency performing the digital preservation events.
 
 ### REST API
 
