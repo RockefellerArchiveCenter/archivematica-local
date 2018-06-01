@@ -21,6 +21,17 @@ Before ingesting digital objects destined for ArchivesSpace, ensure that the Arc
 
 These settings should be created and saved before digital objects destined for upload to ArchivesSpace are processed. Note that these can be set once and used for processing any number of transfers (i.e. they do not need to be re-set for each transfer). In order to save changes to the ArchivesSpace DIP upload configuration, you must enter the password before clicking save. Note that Archivematica will *not* show you an error if the password is not entered.
 
+### PREMIS agent
+
+### REST API
+
+### Users
+
+### Handle server config
+
+### Language
+
+### Version
 
 ## Storage Service
 
