@@ -13,7 +13,9 @@ For the processing configuring for each workflow, please see the appendix.
 Failed ingests can be viewed and deleted here.
 
 ### Locations
-The  transfer source locations and AIP storage locations can be viewed in the Administration tab, but are managed in the Storage Service. The processing storage usage can be managed in the Administration tab.
+The  transfer source locations and AIP storage locations can be viewed in the Administration tab, but are managed in the Storage Service.
+
+The processing storage usage page displays various processing locations with their current usage of available space. Administrators can use the “clear” buttons to delete the contents of these processing locations to make more room on their server.
 
 
 ### DIP Upload (ArchivesSpace)
