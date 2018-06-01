@@ -40,10 +40,8 @@ Users can be also created, modified and deleted from the Administration tab. Onl
 * _Delete:_ revoke a user's access.
 
 ### Handle server config
+The RAC does not use this feature.
 
-### Language
-
-### Version
 
 ## Storage Service
 
