@@ -29,9 +29,15 @@ The development dashboard should use the ArchivesSpace development IP address, a
 
 ### PREMIS agent
 
+
 ### REST API
 
 ### Users
+The dashboard provides a simple cookie-based user authentication system using the Django authentication framework. Access to the dashboard is limited only to logged-in users and a login page will be shown when the user is not recognized. If the application can’t find any user in the database, the user creation page will be shown instead, allowing the creation of an administrator account.
+
+Users can be also created, modified and deleted from the Administration tab. Only users who are administrators can create and edit user accounts.
+
+You can add a new user to the system by clicking the “Add new” button on the user administration page. By adding a user you provide a way to access Archivematica using a username/password combination. Should you need to change a user’s username or password, you can do so by clicking the “Edit” button, corresponding to the user, on the administration page. Should you need to revoke a user’s access, you can click the corresponding “Delete” button.
 
 ### Handle server config
 
