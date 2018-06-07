@@ -39,40 +39,14 @@ title:  "Ingest"
 
 ## Ingest Using Automation Tools
 
-`transfers/transfer.py` is used to prepare transfers, move them into the pipelines processing location, and take actions when user input is required.
+To ingest a transfer using the automation tools, run a shell script that runs the automate transfer tool. The shell script calls `transfers/transfer.py` and passes arguments. `transfers/transfer.py` is used to prepare transfers, move them into the pipelines processing location, and take actions when user input is required.
+
+Generally, a user will not need to call the script. A cron job has been set up to run the shell script that runs the automate transfer tool.
+
 Only one transfer is sent to the pipeline at a time, the scripts wait until the current transfer is resolved (failed, rejected or stored as an AIP) before automatically starting the next available transfer.
 
-### Configuration
-Suggested deployment is to use cron to run a shell script that runs the automate transfer tool. Example shell script (for example in `/etc/archivematica/automation-tools/transfer-script.sh`):
+Please see the administration page for more information on configuring the shell scripts.
 
-```
-#!/bin/bash
-cd /usr/lib/archivematica/automation-tools/
-/usr/share/python/automation-tools/bin/python -m transfers.transfer --user <user> --api-key <apikey> --ss-user <user> --ss-api-key <apikey> --transfer-source <transfer_source_uuid> --config-file <config_file>
-```
-
-(Note that the script calls the transfers script as a module using python's `-m` flag, this is required due to the use of relative imports in the code)
-
-The `transfers.py` script can be modified to adjust how automated transfers work.  The full set of parameters that can be changed are:
-
-* `-u USERNAME, --user USERNAME` [REQUIRED]: Username of the Archivematica dashboard user to authenticate as.
-* `-k KEY, --api-key KEY` [REQUIRED]: API key of the Archivematica dashboard user.
-* `--ss-user USERNAME` [REQUIRED]: Username of the Storage Service user to authenticate as. Storage Service 0.8 and up requires this; earlier versions will ignore any value provided.
-* `--ss-api-key KEY` [REQUIRED]: API key of the Storage Service user. Storage Service 0.8 and up requires this; earlier versions will ignore any value provided.
-* `-t UUID, --transfer-source UUID`: [REQUIRED] Transfer Source Location UUID to fetch transfers from. Can be found under "Locations" in Storage Service.
-* `--transfer-path PATH`: Relative path within the Transfer Source. Default: ""
-* `--depth DEPTH, -d DEPTH`: Depth to create the transfers from relative to the transfer source location and path. Default of 1 creates transfers from the children of transfer-path.
-* `--am-url URL, -a URL`:Archivematica URL. Default: http://127.0.0.1
-* `--ss-url URL, -s URL`: Storage Service URL. Default: http://127.0.0.1:8000
-* `--transfer-type TYPE`: Type of transfer to start. One of: 'standard' (default), 'unzipped bag', 'zipped bag', 'dspace'.
-* `--files`: If set, start transfers from files as well as folders.
-* `--hide`: If set, hides the Transfer and SIP once completed.
-* `-c FILE, --config-file FILE`: config file containing file paths for log/database/PID files. Default: log/database/PID files stored in the same directory as the script (not recommended for production)
-* `-v, --verbose`: Increase the debugging output. Can be specified multiple times, e.g. `-vv`
-* `-q, --quiet`: Decrease the debugging output. Can be specified multiple times, e.g. `-qq`
-* `--log-level`: Set the level for debugging output. One of: 'ERROR', 'WARNING', 'INFO', 'DEBUG'. This will override `-q` and `-v`
-
-The `--config-file` specified can also be used to define a list of file extensions that script files should have for execution. By default there is no limitation, but it may be useful to specify this, for example `scriptextensions = .py:.sh`. Multiple extensions may be specified, using '`:`' as a separator.
 
 #### Running the Script
 The script can be run from a shell window like:
