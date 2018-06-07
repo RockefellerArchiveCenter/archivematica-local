@@ -134,3 +134,13 @@ These should be the default settings for born digital materials:
 	
 ## Troubleshooting
 
+### Restart MCP Services
+
+To restart Archivematica, enter the following (order sensitive) from a shell window logged into the Archivematica server:
+
+```
+sudo stop archivematica-mcp-client
+sudo stop archivematica-mcp-server
+sudo start archivematica-mcp-server
+sudo start archivematica-mcp-client
+```
