@@ -31,7 +31,7 @@ When running, automated transfers stores its working state in a sqlite database.
 
 The 2 scripts in the automation directory are `transfer-script-std-m.sh` and `transfer-script-unzbag-m.sh`.
 
-#### Getting Correct UUIDs and Setting Processing Rules
+#### Setting Processing Rules
 
 The easiest way to configure the tasks that automation-tools will run is by using the dashboard:
 
@@ -41,29 +41,6 @@ The easiest way to configure the tasks that automation-tools will run is by usin
 
 3. Copy the processing configuration file from `/var/archivematica/sharedDirectory/sharedMicroServiceTasksConfigs/processingMCPConfigs/defaultProcessingMCP.xml` on the Archivematica host machine to the `transfers/` directory of your automation-tools installation location.
 
-The automation-tools command-line also relies on installation-specific UUIDs. To obtain the transfer source UUID for script invocation, visit the 'Transfer Source' tab in the Archivematica Storage Space web dashboard. If a row is marked as a transfer souce its UUID value will be valid as a transfer source argument.
-
-#### Getting API keys
-
-To get the Archivematica API key, log in to Archivematica as the user you wish to authenticate as.
-From the dashboard, click your username in the top right corner, then select 'Your profile'.
-The API key will be displayed at the bottom of the page.
-
-To get the Storage Service API key, log in to the Storage Service as the user you wish to authenticate as.
-From the dashboard, go to Administration > Users and select 'Edit' for the user you want the key for.
-The API key will be displayed at the bottom of the page.
-
-
-### Logs
-
-Logs are written to a directory specified in the config file (or `/var/log/archivematica/automation-tools/` by default). The logging level can be adjusted, by modifying the transfers/transfer.py file. Find the following section and changed `'INFO'` to one of `'INFO'`, `'DEBUG'`, `'WARNING'`, `'ERROR'` or `'CRITICAL'`.
-
-    'loggers': {
-        'transfer': {
-            'level': 'INFO',  # One of INFO, DEBUG, WARNING, ERROR, CRITICAL
-            'handlers': ['console', 'file'],
-        },
-    },
 
 ## Manual Ingest
 
