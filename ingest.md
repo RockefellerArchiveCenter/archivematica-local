@@ -159,36 +159,3 @@ Logs are written to a directory specified in the config file (or `/var/log/archi
             'handlers': ['console', 'file'],
         },
     },
-
-### Multiple automated transfer instances
-
-You may need to set up multiple automated transfer instances, for example if required to ingest both standard transfers and bags. In cases where hooks are the same for both instances, it could be achieved by setting up different scripts, each one invoking the transfers.py script with the required parameters. Example:
-
-```
-# first script invokes like this (standard transfer):
-/usr/share/python/automation-tools/bin/python -m transfers.transfer --user <user>  --api-key <apikey> --ss-user <user> --ss-api-key <apikey> --transfer-source <transfer_source_uuid_for_std_xfers> --config-file <config_file>
-
-# second script invokes like this (unzipped bags):
-/usr/share/python/automation-tools/bin/python -m transfers.transfer --user <user>  --api-key <apikey> --ss-user <user> --ss-api-key <apikey> --transfer-source <transfer_source_2_uuid_for_bags> --config-file <config_file_2> --transfer-type 'unzipped bag'
-```
-
-`<config_file_1>` and `<config_file_2>` should specify different file names for db/PID/log files. See transfers.conf and transfers-2.conf in etc/ for an example
-
-In case different hooks are required for each instance, a possible approach is to checkout a new instance of the automation tools, for example in `/usr/lib/archivematica/automation-tools-2`
-
-### `transfer_async.py`
-
-This is a new work-in-progress entry point similar to `transfers.transfer` that uses the new asynchronous endpoints of Archivematica being developed under the `/api/v2beta` API. It takes the same arguments, e.g.:
-
-```
-#!/usr/bin/env bash
-
-cd /usr/lib/archivematica/automation-tools/
-
-/usr/share/python/automation-tools/bin/python -m transfers.transfer_async \
-  --user <user> --api-key <apikey> \
-  --ss-user <user> --ss-api-key <apikey> \
-  --transfer-source <transfer_source_uuid> \
-  --config-file <config_file>
-```
-
