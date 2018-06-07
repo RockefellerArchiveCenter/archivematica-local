@@ -93,9 +93,9 @@ Logs are written to a directory specified in the config file (or `/var/log/archi
 
 5.  Above, shown are pairs that have been created using this process. To delete a pair (i.e. make the digital object available to be linked to a different description), click the delete icon to the right of the pair. Once the mapping is completed, click “Save”. You will be asked to confirm the save, and then the mapping screen will close and you will be returned to the ingest tab in the Archivematica dashboard.
 
->\*\*\*file names are sanitized during ingest--so if the original filename has spaces or special characters in it, they are now underscores--this affects filtering objects
->
->\*\*\*filtering objects is not case sensitive
->
->\*\*\*"select all" selects \*everything\*, not just files that are currently visible (i.e., filtered)
+> Note:
+> 
+> * file names are sanitized during ingest--so if the original filename has spaces or special characters in it, they are now underscores--this affects filtering objects
+> * filtering objects is not case sensitive
+> * "select all" selects \*everything\*, not just files that are currently visible (i.e., filtered)
 
