@@ -131,3 +131,6 @@ These should be the default settings for born digital materials:
 *  If PREMIS <act> = Disseminate and PREMIS <restriction> = Allow, Publish = TRUE
 *  If PREMIS <act> = Disseminate and PREMIS <restriction> = Conditional, Publish = FALSE
 *  If PREMIS <act> = Disseminate and PREMIS <restriction> = Disallow, Publish = FALSE
+	
+## Troubleshooting
+
