@@ -94,7 +94,7 @@ The Administration section manages the users and settings for the Storage Servic
 *  **VERSION:** The version page will display the current version and specific git commit of your installation of the Storage Service.
 *  **SERVICE CALLBACKS:** Callbacks allow REST calls to be made by the Archivematica Storage Service after performing certain types of actions. This allows external services to be notified when internal actions have taken place.
 
-## Ingest Using Automation Tools
+## Automation Tools
 
 `transfers/transfer.py` is used to prepare transfers, move them into the pipelines processing location, and take actions when user input is required.
 Only one transfer is sent to the pipeline at a time, the scripts wait until the current transfer is resolved (failed, rejected or stored as an AIP) before automatically starting the next available transfer.
