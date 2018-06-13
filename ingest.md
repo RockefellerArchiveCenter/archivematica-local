@@ -3,7 +3,7 @@ layout: docs
 title:  "RAC Archivematica | Ingest"
 ---
 
-## Ingest Using Automation Tools
+## Automation Tools
 
 To ingest a transfer using the automation tools, run a shell script from the Archivematica server that runs the automate transfer tool. The shell script calls `transfers/transfer.py` and passes arguments. `transfers/transfer.py` is used to prepare transfers, move them into the processing location, and take actions when user input is required.
 
