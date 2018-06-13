@@ -37,7 +37,7 @@ The 2 scripts in the automation directory are `transfer-script-std-m.sh` and `tr
 
 5. Complete any microservice that requires human intervention. When *Micro-service: Create SIP from Transfer* has completed, proceed to the **Ingest tab**.
 
-6. In in the **Ingest tab**, complete any microservice that requires human intervention. If a DIP will be created, in *Job: Upload DIP*, select *Upload DIP to ArchivesSpace* then follow the instructions in Manual Matching.
+6. In in the **Ingest tab**, complete any microservice that requires human intervention. If a DIP will be created, in *Job: Upload DIP*, select *Upload DIP to ArchivesSpace* then follow the instructions in Manual Matching. Manual matching is not necessary if an ArchivesSpace IDs CSV file was included with the transfer.
 
 ### Manual Matching
 
