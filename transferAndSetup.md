@@ -123,6 +123,8 @@ Note that filenames, including file extensions, are case sensitive, and should c
 
 The `rights.csv` file is parsed by the job “Load Rights” within the “Characterize and Extract Metadata” microservice run during transfer.
 
+For details on how PREMIS rights information is mapped to ArchivesSpace, see the [Appendix](appendix#premis-mapping).
+
 *Example:*
 
 {::comment}
