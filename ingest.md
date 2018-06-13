@@ -13,34 +13,15 @@ Only one transfer is sent to the pipeline at a time, the scripts wait until the 
 
 Please see the administration page for more information on configuring the shell scripts that call `transfers/transfer.py`.
 
-
-#### Running the Script
 The script can be run from a shell window like:
 
 ```
 user@host:/etc/archivematica/automation-tools$ sudo -u archivematica ./transfer-script.sh
 ```
 
-It is suggested to run the script through a crontab entry for user archivematica (to avoid the need to repeatedly invoke it manually):
-
-```
-*/5 * * * * /etc/archivematica/automation-tools/transfer-script.sh
-```
-
 When running, automated transfers stores its working state in a sqlite database.  It contains a record of all the transfers that have been processed.  In a testing environment, deleting this file will cause the tools to re-process any and all folders found in the Transfer Source Location.
 
 The 2 scripts in the automation directory are `transfer-script-std-m.sh` and `transfer-script-unzbag-m.sh`.
-
-#### Setting Processing Rules
-
-The easiest way to configure the tasks that automation-tools will run is by using the dashboard:
-
-1. Go to Administration > Processing Configuration and choose the options you wish to use.
-
-2. Save the configuration on the form.
-
-3. Copy the processing configuration file from `/var/archivematica/sharedDirectory/sharedMicroServiceTasksConfigs/processingMCPConfigs/defaultProcessingMCP.xml` on the Archivematica host machine to the `transfers/` directory of your automation-tools installation location.
-
 
 ## Manual Ingest
 
