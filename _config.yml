@@ -7,7 +7,7 @@ title: "Guide to Using Archivematica"
 description: "Local Archivematica documentation"
 pages:
   - ["Archivematica Overview", "index"]
-  - ["Transfer and Setup", "transferAndSetup"]
+  - ["Set up for Transfer", "transferAndSetup"]
   - ["Ingest", "ingest"]
   - ["Workflows by Content Type", "workflows"]
   - ["Administration", "administration"]
