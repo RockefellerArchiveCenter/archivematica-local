@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  "Workflows by Content Type"
+title:  "RAC Archivematica | Workflows by Content Type"
 ---
 
 ## Digitized Materials
