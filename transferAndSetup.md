@@ -108,7 +108,7 @@ Generally, two metadata files are included in RAC transfers. These are:
 
 ### ArchivesSpace IDs CSV
 
-In order to automatically match access files with components in ArchivesSpace, a CSV file with the filename "archivesspaceids.csv" must be included in the `/metadata` directory in the transfer. The first column contains the filenames and the second column contains the refid of the component the file needs to be linked to. There is no header row.
+In order to automatically match access files with components in ArchivesSpace, a CSV file with the filename `archivesspaceids.csv` must be included in the `/metadata` directory in the transfer. The first column contains the filenames and the second column contains the refid of the component the file needs to be linked to. There is no header row.
 
 Note that filenames, including file extensions, are case sensitive, and should contain the full path. For born digital ingests, if files were manually normalized, the filepath should be for the original filename, not the file in the `/access` directory. For digitized ingests, the filepath _should_ be for the file in the `/access` directory, and include `/access` in the filepath.
 
@@ -121,13 +121,9 @@ Note that filenames, including file extensions, are case sensitive, and should c
 
 ### PREMIS CSV
 
-The `rights.csv` file is parsed by the job “Load Rights” within the “Characterize and Extract Metadata” microservice run during transfer.
-
-For details on how PREMIS rights information is mapped to ArchivesSpace, see the [Appendix](appendix#premis-mapping).
+PREMIS rights information is included in the METS file in the AIP and is used to write information to ArchivesSpace as part of the ArchivesSpace DIP Upload Integration. For details on how PREMIS rights information is mapped to ArchivesSpace, see the [Appendix](appendix#premis-mapping). In order to include rights information with the transfer, a `rights.csv` file must be included in the `/metadata` directory of the transfer. 
 
 *Example:*
-
-{::comment}
 
 | file | basis | status | determination_date | jurisdiction | start_date | end_date | terms | citation | note | grant_act | grant_restriction | grant_start_date | grant_end_date | grant_note | doc_id_type | doc_id_value | doc_id_role |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -140,7 +136,6 @@ For details on how PREMIS rights information is mapped to ArchivesSpace, see the
 | r2fp9q4b_003.tif | copyright | copyrighted | 3/15/18 | us | 1/1/00 | open |  |  | Copyright note | publish | Allow | 1/1/00 | open | Grant note |  |  |  |
 | r2fp9q4b_003.tif | donor |  |  |  | 1/1/90 | open |  |  | Donor note | disseminate | Allow | 1/1/90 | open | Grant note |  |  |  |
 
-{:/comment}
 
 ## Transfer Source
 
