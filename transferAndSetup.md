@@ -112,7 +112,7 @@ In order to automatically match access files with components in ArchivesSpace, a
 
 Note that filenames, including file extensions, are case sensitive, and should contain the full path. For born digital ingests, if files were manually normalized, the filepath should be for the original filename, not the file in the `/access` directory. For digitized ingests, the filepath _should_ be for the file in the `/access` directory, and include `/access` in the filepath.
 
-For example:
+*Example:*
 
 | data/objects/Youth Organizations.doc  | ref5086\_rts |
 | data/objects/Meeting Minutes.pdf      | ref5086\_rts |
@@ -123,7 +123,7 @@ For example:
 
 The `rights.csv` file is parsed by the job “Load Rights” within the “Characterize and Extract Metadata” microservice run during transfer.
 
-For example:
+*Example:*
 
 {::comment}
 
