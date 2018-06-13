@@ -21,12 +21,14 @@ As these are the vast majority of our use cases, all transfers ingested into Arc
 
 The following directory structure examples are for Standard Transfers, which will be used the majority of the time. Transfers can also be zipped or unzipped bags, in which case all subdirectories should be in the `/data` directory.
 
-### Digitized Material
+### Examples
+
+#### Digitized Material
 
 Master files are in directory "Master," master edited files are in directory "Master Edited," and serviced edited files are in directory "Service Edited." The output should look like either of the following (depending on access format):
 
 
-#### Access format: concatenated PDF
+##### Access format: concatenated PDF
 
 ```
 /archivematica_sip_examplerefid
@@ -45,7 +47,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
       examplerefid_003.tif
 ```
 
-#### Access format: JPGs
+##### Access format: JPGs
 
 ```
 /archivematica_sip_examplerefid
@@ -65,9 +67,9 @@ Master files are in directory "Master," master edited files are in directory "Ma
       examplerefid_003.tif
 ```
 
-### Legacy Born Digital
+#### Legacy Born Digital
 
-#### With Manually Normalized Files
+##### With Manually Normalized Files
 
 ```
   /top-level
@@ -84,7 +86,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
     /logs
 ```
 
-#### Without Manually Normalized Files
+##### Without Manually Normalized Files
 
 ```
  /top-level
