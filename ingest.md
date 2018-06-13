@@ -5,13 +5,13 @@ title:  "Ingest"
 
 ## Ingest Using Automation Tools
 
-To ingest a transfer using the automation tools, run a shell script that runs the automate transfer tool. The shell script calls `transfers/transfer.py` and passes arguments. `transfers/transfer.py` is used to prepare transfers, move them into the pipelines processing location, and take actions when user input is required.
+To ingest a transfer using the automation tools, run a shell script from the Archivematica server that runs the automate transfer tool. The shell script calls `transfers/transfer.py` and passes arguments. `transfers/transfer.py` is used to prepare transfers, move them into the processing location, and take actions when user input is required.
 
-Generally, a user will not need to call the script. A cron job has been set up to run the shell script that runs the automate transfer tool.
+Generally, a user will not need to call the script. A cron job has been set up to run the shell script that runs the automate transfer tool. This means that a script will watch a designated directory for a new transfer to ingest and will run the automated transfer script.
 
 Only one transfer is sent to the pipeline at a time, the scripts wait until the current transfer is resolved (failed, rejected or stored as an AIP) before automatically starting the next available transfer.
 
-Please see the administration page for more information on configuring the shell scripts.
+Please see the administration page for more information on configuring the shell scripts that call `transfers/transfer.py`.
 
 
 #### Running the Script
