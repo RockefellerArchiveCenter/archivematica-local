@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  "Ingest"
+title:  "RAC Archivematica | Ingest"
 ---
 
 ## Ingest Using Automation Tools

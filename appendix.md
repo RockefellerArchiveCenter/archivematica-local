@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  "Appendix"
+title:  "RAC Archivematica | Appendix"
 ---
 
 ## Processing Configuration

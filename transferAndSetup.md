@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  "Set up for Transfer to Archivematica"
+title:  "RAC Archivematica | Set up for Transfer"
 ---
 
 

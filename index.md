@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  "Rockefeller Archive Center Archivematica"
+title:  "Rockefeller Archive Center Guide to Using Archivematica"
 ---
 
 This is the Rockefeller Archive Center's local documentation for Archivematica. Archivematica is an integrated suite of tools to process digital objects from ingest to archival storage and access in compliance with the OAIS functional model and other digital preservation standards and best practices.

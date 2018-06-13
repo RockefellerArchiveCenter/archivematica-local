@@ -1,6 +1,6 @@
 ---
 layout: docs
-title:  "Administration"
+title:  "RAC Archivematica | Administration"
 ---
 ## Administration Tab in Dashboard
 
