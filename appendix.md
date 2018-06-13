@@ -132,15 +132,3 @@ These should be the default settings for born digital materials:
 *  If PREMIS <act> = Disseminate and PREMIS <restriction> = Conditional, Publish = FALSE
 *  If PREMIS <act> = Disseminate and PREMIS <restriction> = Disallow, Publish = FALSE
 	
-## Troubleshooting
-
-### Restart MCP Services
-
-To restart Archivematica, enter the following (order sensitive) from a shell window logged into the Archivematica server:
-
-```
-sudo stop archivematica-mcp-client
-sudo stop archivematica-mcp-server
-sudo start archivematica-mcp-server
-sudo start archivematica-mcp-client
-```
