@@ -6,7 +6,7 @@ title:  "RAC Archivematica | Set up for Transfer"
 
 ## Transfer Structure 
 
-While Archivematica will restructure a directory for basic transfers, some transfer types require a directory structure that is compliant with Archivematica's SIP directory structure. A structured directory is required for the following types of transfers:
+Archivematica requires a directory structure that is compliant with Archivematica's SIP directory structure for the following types of transfers:
 
 *  transfers with multiple versions of digitized files
 *  transfer with metadata, such as an archivesspaceids.csv or rights.csv
@@ -15,9 +15,9 @@ While Archivematica will restructure a directory for basic transfers, some trans
 
 As these are the vast majority of our use cases, all transfers ingested into Archivematica should be in a structured directory. A structured directory includes the following subdirectories:
 
-*  **objects**: The objects directory contains the digital objects that are to be preserved. You can create subdirectories within objects if desired.
-*  **metadata**: The metadata directory contains the checksum, the METS file, and a submissionDocumentation subfolder, which can be used for transfer forms, donation agreements or any other documents that relate to the acquisition of the records.
-*  **logs**: The logs directory will eventually contain logs generated when processing the transfer in Archivematica.
+*  **objects**: The `/objects` directory contains the digital objects that are to be preserved. This can contain subdirectories.
+*  **metadata**: The `/metadata` directory will eventually contain the checksum and the METS file. At the point of transfer, the `/metadata` directory contains the ArchivesSpace IDs CSV and the PREMIS CSV.
+*  **logs**: The `/logs` directory will eventually contain logs generated when processing the transfer in Archivematica.
 
 The following directory structure examples are for Standard Transfers, which will be used the majority of the time. Transfers can also be zipped or unzipped bags, in which case all subdirectories should be in the `/data` directory.
 
@@ -87,14 +87,14 @@ Master files are in directory "Master," master edited files are in directory "Ma
 #### Without Manually Normalized Files
 
 ```
- /top-level                                                               
-   /objects                                                                 
-     digital-object1.pdf                                                      
-     digital-object2.pdf                                                      
-     digital-object3.docx                                                     
-   /metadata                                                                
-     archivesspaceids.csv                                                    
-   /logs                                                                    
+ /top-level
+   /objects
+     digital-object1.pdf
+     digital-object2.pdf
+     digital-object3.docx
+   /metadata
+     archivesspaceids.csv
+   `/logs`
 ```
 
 ## Transfer Metadata
