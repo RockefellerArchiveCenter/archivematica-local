@@ -4,18 +4,14 @@ title:  "RAC Archivematica | Administration"
 ---
 ## Administration Tab in Dashboard
 
+This section contains information on settings that are specific to the RAC's implementation of Arcchivematica. For information on general administration, such as adding users, see the [Official Archivematica Documentation](https://www.archivematica.org/en/docs/archivematica-1.7/).
+
 ### Processing Configuration
 The processing configuration administration page of the dashboard allows users to configure the job decision points presented by Archivematica during transfer and ingest. This screen provides you with an easy form to configure the default processingMCP.xml that governs these decisions. When you change the options using the web interface the necessary XML will be written behind the scenes.
 
-For the processing configuring for each workflow, please see the appendix.
+For the processing configuring for each workflow, see the [Appendix](appendix#processing-configuration).
 
-### Failures
 Failed ingests can be viewed and deleted here.
-
-### Locations
-The  transfer source locations and AIP storage locations can be viewed in the Administration tab, but are managed in the Storage Service.
-
-The processing storage usage page displays various processing locations with their current usage of available space. Administrators can use the “clear” buttons to delete the contents of these processing locations to make more room on their server.
 
 
 ### DIP Upload (ArchivesSpace)
@@ -26,22 +22,6 @@ These settings need to be configured before digital objects destined for upload 
 In order to save changes to the ArchivesSpace DIP upload configuration, you must enter the password before clicking save. Note that Archivematica will *not* show you an error if the password is not entered.
 
 The development dashboard should use the ArchivesSpace development IP address, and the production dashboard should use the ArchivesSpace productin IP address.
-
-### PREMIS agent
-The PREMIS agent information is used in the METS files created by Archivematica to identify the agency performing the digital preservation events.
-
-### REST API
-
-### Users
-Users can be also created, modified and deleted from the Administration tab. Only users who are administrators can create and edit user accounts.
-
-* _Add new:_ add a new user to the Archivematica dashboard.
-* _Edit:_ change a user's username or password.
-* _Delete:_ revoke a user's access.
-
-### Handle server config
-The RAC does not use this feature.
-
 
 ## Storage Service
 
