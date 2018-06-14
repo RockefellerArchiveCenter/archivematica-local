@@ -34,6 +34,8 @@ Master files are in directory "Master," master edited files are in directory "Ma
 /archivematica_sip_examplerefid
   /logs
   /metadata
+    archivesspaceids.csv
+    rights.csv
   /objects
     examplerefid_001.tif
     examplerefid_002.tif
@@ -53,6 +55,8 @@ Master files are in directory "Master," master edited files are in directory "Ma
 /archivematica_sip_examplerefid
   /logs
   /metadata
+    archivesspaceids.csv
+    rights.csv
   /objects
     examplerefid_001.tif
     examplerefid_002.tif
@@ -72,31 +76,33 @@ Master files are in directory "Master," master edited files are in directory "Ma
 ##### With Manually Normalized Files
 
 ```
-  /top-level
-    /objects
-      digital-object1.doc
-      digital-object2.pdf
-      /manualNormalization
-        /access
-          digital-object1.docx
-        /preservation
-          digital-object1.docx
-    /metadata
-      archivesspaceids.csv
-    /logs
+/top-level
+  /logs
+  /metadata
+    archivesspaceids.csv
+    rights.csv
+  /objects
+    digital-object1.doc
+    digital-object2.pdf
+    /manualNormalization
+      /access
+        digital-object1.docx
+      /preservation
+        digital-object1.docx
 ```
 
 ##### Without Manually Normalized Files
 
 ```
- /top-level
-   /objects
-     digital-object1.pdf
-     digital-object2.pdf
-     digital-object3.docx
-   /metadata
-     archivesspaceids.csv
-   `/logs`
+/top-level
+  /logs
+  /metadata
+    archivesspaceids.csv
+    rights.csv
+  /objects
+    digital-object1.pdf
+    digital-object2.pdf
+    digital-object3.docx
 ```
 
 ## Transfer Metadata
