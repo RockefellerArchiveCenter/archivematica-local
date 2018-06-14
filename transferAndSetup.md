@@ -35,12 +35,12 @@ Master files are in directory "Master," master edited files are in directory "Ma
   /logs
   /metadata
   /objects
-    examplerefid_001_me.tif
-    examplerefid_002_me.tif
-    examplerefid_003_me.tif
-    examplerefid_se.pdf
+    examplerefid_001.tif
+    examplerefid_002.tif
+    examplerefid_003.tif
+    examplerefid.pdf
     /access
-      examplerefid_se.pdf
+      examplerefid.pdf
     /service
       examplerefid_001.tif
       examplerefid_002.tif
