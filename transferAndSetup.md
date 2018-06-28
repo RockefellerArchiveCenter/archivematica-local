@@ -132,9 +132,9 @@ Note that filenames, including file extensions, are case sensitive, and should c
 
 *Access version - digitized:*
 
-| examplerefid_001.jpg | examplerefid |
-| examplerefid_002.jpg | examplerefid |
-| examplerefid_003.jpg | examplerefid |
+| access/examplerefid_001.jpg | examplerefid |
+| access/examplerefid_002.jpg | examplerefid |
+| access/examplerefid_003.jpg | examplerefid |
 
 
 
