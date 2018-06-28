@@ -116,13 +116,26 @@ Generally, two metadata files are included in RAC transfers. These are:
 
 In order to automatically match access files with components in ArchivesSpace, a CSV file with the filename `archivesspaceids.csv` must be included in the `/metadata` directory in the transfer. The first column contains the filenames and the second column contains the refid of the component the file needs to be linked to. There is no header row.
 
-Note that filenames, including file extensions, are case sensitive, and should contain the full path. For born digital ingests, if files were manually normalized, the filepath should be for the original filename, not the file in the `/access` directory. For digitized ingests, the filepath _should_ be for the file in the `/access` directory, and include `/access` in the filepath.
+Note that filenames, including file extensions, are case sensitive, and should contain the full path either including or after the `/objects` directory. If an access version of the file is included in the transfer, the filepath to include in the first column should be the access version; if an access version is not included, the filepath in the first column should be for the original object.
 
-*Example:*
+*No access version:*
 
-| data/objects/Youth Organizations.doc  | ref5086\_rts |
-| data/objects/Meeting Minutes.pdf      | ref5086\_rts |
-| data/objects/Youth Organizations Revised.doc  | ref5086\_rts |
+| Youth Organizations.doc | ref5086\_rts |
+| Meeting Minutes.pdf | ref5086\_rts |
+| Youth Organizations Revised.doc | ref5086\_rts |
+
+*Access version - manually normalized:*
+
+| manualNormalization/access/Youth Organizations.docx | examplerefid |
+| manualNormalization/access/Meeting Minutes.pdf | examplerefid |
+| manualNormalization/access/Youth Organizations Revised.docx | examplerefid |
+
+*Access version - digitized:*
+
+| access/examplerefid_001.jpg | examplerefid |
+| access/examplerefid_002.jpg | examplerefid |
+| access/examplerefid_003.jpg | examplerefid |
+
 
 
 ### PREMIS CSV
@@ -133,14 +146,14 @@ PREMIS rights information is included in the METS file in the AIP and is used to
 
 | file | basis | status | determination_date | jurisdiction | start_date | end_date | terms | citation | note | grant_act | grant_restriction | grant_start_date | grant_end_date | grant_note | doc_id_type | doc_id_value | doc_id_role |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| r2fp9q4b_004.tif | copyright | copyrighted | 3/15/18 | us | 1/1/00 | open |  |  | Copyright note | publish | Allow | 1/1/00 | open | Grant note |  |  |  |
-| r2fp9q4b_004.tif | donor |  |  |  | 1/1/90 | open |  |  | Donor note | disseminate | Allow | 1/1/90 | open | Grant note |  |  |  |
-| r2fp9q4b_001.tif | copyright | copyrighted | 3/15/18 | us | 1/1/00 | open |  |  | Copyright note | publish | Allow | 1/1/00 | open | Grant note |  |  |  |
-| r2fp9q4b_001.tif | donor |  |  |  | 1/1/90 | open |  |  | Donor note | disseminate | Allow | 1/1/90 | open | Grant note |  |  |  |
-| r2fp9q4b_002.tif | copyright | copyrighted | 3/15/18 | us | 1/1/00 | open |  |  | Copyright note | publish | Allow | 1/1/00 | open | Grant note |  |  |  |
-| r2fp9q4b_002.tif | donor |  |  |  | 1/1/90 | open |  |  | Donor note | disseminate | Allow | 1/1/90 | open | Grant note |  |  |  |
-| r2fp9q4b_003.tif | copyright | copyrighted | 3/15/18 | us | 1/1/00 | open |  |  | Copyright note | publish | Allow | 1/1/00 | open | Grant note |  |  |  |
-| r2fp9q4b_003.tif | donor |  |  |  | 1/1/90 | open |  |  | Donor note | disseminate | Allow | 1/1/90 | open | Grant note |  |  |  |
+| r2fp9q4b_004.tif | copyright | copyrighted | 3/15/18 | us | 1/1/00 | open | | | Copyright note | publish | Allow | 1/1/00 | open | Grant note | | | |
+| r2fp9q4b_004.tif | donor | | | | 1/1/90 | open | | | Donor note | disseminate | Allow | 1/1/90 | open | Grant note | | | |
+| r2fp9q4b_001.tif | copyright | copyrighted | 3/15/18 | us | 1/1/00 | open | | | Copyright note | publish | Allow | 1/1/00 | open | Grant note | | | |
+| r2fp9q4b_001.tif | donor | | | | 1/1/90 | open | | | Donor note | disseminate | Allow | 1/1/90 | open | Grant note | | | |
+| r2fp9q4b_002.tif | copyright | copyrighted | 3/15/18 | us | 1/1/00 | open | | | Copyright note | publish | Allow | 1/1/00 | open | Grant note | | | |
+| r2fp9q4b_002.tif | donor | | | | 1/1/90 | open | | | Donor note | disseminate | Allow | 1/1/90 | open | Grant note | | | |
+| r2fp9q4b_003.tif | copyright | copyrighted | 3/15/18 | us | 1/1/00 | open | | | Copyright note | publish | Allow | 1/1/00 | open | Grant note | | | |
+| r2fp9q4b_003.tif | donor | | | | 1/1/90 | open | | | Donor note | disseminate | Allow | 1/1/90 | open | Grant note | | | |
 
 
 ## Transfer Source
