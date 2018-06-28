@@ -120,9 +120,9 @@ Note that filenames, including file extensions, are case sensitive, and should c
 
 *Example:*
 
-| data/objects/Youth Organizations.doc  | ref5086\_rts |
-| data/objects/Meeting Minutes.pdf      | ref5086\_rts |
-| data/objects/Youth Organizations Revised.doc  | ref5086\_rts |
+| Youth Organizations.doc  | ref5086\_rts |
+| Meeting Minutes.pdf      | ref5086\_rts |
+| Youth Organizations Revised.doc  | ref5086\_rts |
 
 
 ### PREMIS CSV
