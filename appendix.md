@@ -86,18 +86,18 @@ These should be the default settings for born digital materials:
 
 #### File Version
 
-*  **File URI: Populate with URL prefix from URI Prefix field in  Archivematica administration settings, plus file UUID and filename, for example: http:**//storage.rockarch.org/[UUID]-filename.
+*  **File URI:** Populate with URL prefix from URI Prefix field in  Archivematica administration settings, plus file UUID and filename, for example: http://storage.rockarch.org/[UUID]-filename.
 *  **Use Statement:** Populate with value from Use Statement field in Archivematica administration settings.
-*  **XLink Attribute Actuate: Derive from PREMIS statement (see Restrictions:** Base on PREMIS below). If no PREMIS statements are present, base on value from XLink Attribute Actuate field in Archivematica administration settings.
-*  **XLink Show Attribute: Derive from PREMIS statement (see Restrictions:** Base on PREMIS below). If no PREMIS statements are present, base on value from XLink Show Attribute field in Archivematica administration settings.
+*  **XLink Attribute Actuate:** Derive from PREMIS statement. If no PREMIS statements are present, base on value from XLink Attribute Actuate field in Archivematica administration settings.
+*  **XLink Show Attribute: Derive from PREMIS statement**. If no PREMIS statements are present, base on value from XLink Show Attribute field in Archivematica administration settings.
 *  **File Format Name:** Populate with DIP digital object file format name as identified by Archivematica.
 *  **File Format Version:** Populate with DIP digital object file format version as identified by Archivematica.
 *  **File Size:** Populate with DIP digital object file size measured in bytes, as identified by Archivematica.
 
 #### Notes
 
-*  **Conditions Governing Access note: Derive from PREMIS <rightsGrantedNote> (see Restrictions:** Base on PREMIS below). If there is no content in <rightsGrantedNote>, populate with value from Conditions Governing Access field in Archivematica administration settings. If no data is entered in this field, do not add note.
-*  **Conditions Governing Use note: Derive from PREMIS <rightsGrantedNote> (see Restrictions:** Base on PREMIS below). If there is no content in <rightsGrantedNote>, populate with value from Conditions Governing Use field in Archivematica administration settings. If no data is entered in this field, do not add note.
+*  **Conditions Governing Access note:** Derive from PREMIS <rightsGrantedNote>. If there is no content in <rightsGrantedNote>, populate with value from Conditions Governing Access field in Archivematica administration settings. If no data is entered in this field, do not add note.
+*  **Conditions Governing Use note:** Derive from PREMIS <rightsGrantedNote>. If there is no content in <rightsGrantedNote>, populate with value from Conditions Governing Use field in Archivematica administration settings. If no data is entered in this field, do not add note.
 *  **Existence and Location of Originals note:** automatically populate with Archivematica AIP UUID
 *  If specified in administration settings, Any other notes attached to the parent component in ArchivesSpace should also be attached to the digital object record.
 
