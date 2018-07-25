@@ -144,7 +144,7 @@ PREMIS rights information is included in the METS file in the AIP and is used to
 
 *Example:*
 
-<div class=table-responsive markdown=block>
+<div class=table-responsive markdown="block">
 
 | file | basis | status | determination_date | jurisdiction | start_date | end_date | terms | citation | note | grant_act | grant_restriction | grant_start_date | grant_end_date | grant_note | doc_id_type | doc_id_value | doc_id_role |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
