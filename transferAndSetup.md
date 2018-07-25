@@ -143,7 +143,7 @@ Note that filenames, including file extensions, are case sensitive, and should c
 PREMIS rights information is included in the METS file in the AIP and is used to write information to ArchivesSpace as part of the ArchivesSpace DIP Upload Integration. For details on how PREMIS rights information is mapped to ArchivesSpace, see the [Appendix](appendix#premis-mapping). In order to include rights information with the transfer, a `rights.csv` file must be included in the `/metadata` directory of the transfer. 
 
 *Example:*
-
+{:.table-responsive}
 | file | basis | status | determination_date | jurisdiction | start_date | end_date | terms | citation | note | grant_act | grant_restriction | grant_start_date | grant_end_date | grant_note | doc_id_type | doc_id_value | doc_id_role |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | r2fp9q4b_004.tif | copyright | copyrighted | 3/15/18 | us | 1/1/00 | open | | | Copyright note | publish | Allow | 1/1/00 | open | Grant note | | | |
