@@ -269,6 +269,8 @@ sqite> .quit
 
 ## Troubleshooting
 
+Log files are located in `/var/log/archivematica/MCPClient/`
+
 ### Restart MCP Services
 
 To restart Archivematica, enter the following (order sensitive) from a shell window logged into the Archivematica server:
@@ -279,3 +281,7 @@ sudo stop archivematica-mcp-server
 sudo start archivematica-mcp-server
 sudo start archivematica-mcp-client
 ```
+
+### Troubleshooting ArchivesSpace DIP Upload
+
+As root, navigate to `/var/log/archivematica/MCPClient/`. To find the relevant line(s) in ` MCPClient.debug.log`, type `grep "upload-archivesspace" MCPClient.debug.log`.
