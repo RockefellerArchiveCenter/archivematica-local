@@ -11,8 +11,6 @@ The processing configuration administration page of the dashboard allows users t
 
 For the processing configuring for each workflow, see the [Appendix](appendix#processing-configuration).
 
-Failed ingests can be viewed and deleted here.
-
 
 ### DIP Upload (ArchivesSpace)
 Before ingesting digital objects destined for ArchivesSpace, ensure that the ArchivesSpace DIP upload settings in the administration tab of the dashboard have been set.

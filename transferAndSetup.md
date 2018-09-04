@@ -159,6 +159,10 @@ PREMIS rights information is included in the METS file in the AIP and is used to
 
 </div>
 
+## Processing Configuration
+
+The processing configuration administration page of the dashboard allows users to configure the job decision points presented by Archivematica during transfer and ingest. This is set in the [administration tab](administration#processing-configuration). A processing congfiguration file can be included with a transfer that is ingested either via the Dashboard or the automated pipeline; if included, it will override the configuration set as the "default" in the dashboard. To create a processing configuration file, download the processing configuration from the Dashboard, and include it as `processingMCP.xml` in the top-level directory of the transfer.
+
 ## Transfer Source
 
 Transfers must be placed in the [Transfer Source](administration#locations) in order to be ingested (either manually or automatically) into Archivematica. More information on the Transfer Source can be found in the Storage Service documentation.
