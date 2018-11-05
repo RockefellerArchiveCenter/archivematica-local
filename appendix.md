@@ -96,8 +96,8 @@ These should be the default settings for born digital materials:
 
 #### Notes
 
-*  **Conditions Governing Access note:** Derive from PREMIS <rightsGrantedNote>. If there is no content in <rightsGrantedNote>, populate with value from Conditions Governing Access field in Archivematica administration settings. If no data is entered in this field, do not add note.
-*  **Conditions Governing Use note:** Derive from PREMIS <rightsGrantedNote>. If there is no content in <rightsGrantedNote>, populate with value from Conditions Governing Use field in Archivematica administration settings. If no data is entered in this field, do not add note.
+*  **Conditions Governing Access note:** Derive from PREMIS _rightsGrantedNote_. If there is no content in _rightsGrantedNote_, populate with value from Conditions Governing Access field in Archivematica administration settings. If no data is entered in this field, do not add note.
+*  **Conditions Governing Use note:** Derive from PREMIS _rightsGrantedNote_. If there is no content in _rightsGrantedNote_, populate with value from Conditions Governing Use field in Archivematica administration settings. If no data is entered in this field, do not add note.
 *  **Existence and Location of Originals note:** automatically populate with Archivematica AIP UUID
 *  If specified in administration settings, Any other notes attached to the parent component in ArchivesSpace should also be attached to the digital object record.
 
@@ -116,19 +116,19 @@ These should be the default settings for born digital materials:
 
 #### Disseminate
 
-*  If PREMIS <act> = Disseminate and PREMIS <restriction> = Allow, Restrictions? = FALSE
-*  If PREMIS <act> = Disseminate and PREMIS <restriction> = Conditional, Restrictions? = TRUE
-*  If PREMIS <act> = Disseminate and PREMIS <restriction> = Disallow, Restrictions? = TRUE
-*  If PREMIS <act> = Disseminate, populate Conditions Governing Access note with contents of PREMIS rightsGrantedNote
+*  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Allow, Restrictions? = FALSE
+*  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Conditional, Restrictions? = TRUE
+*  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Disallow, Restrictions? = TRUE
+*  If PREMIS _act_ = Disseminate, populate Conditions Governing Access note with contents of PREMIS rightsGrantedNote
 *  When Restrictions?=TRUE, both XLink Attribute Actuate and XLink Attribute Show will be set to “none.”
 
 #### Publish
 
-*  If PREMIS <act> = Publish, populate ConditionsGoverningUse with contents of PREMIS rightsGrantedNote
+*  If PREMIS _act_ = Publish, populate ConditionsGoverningUse with contents of PREMIS rightsGrantedNote
 
 ### Publish: Base on PREMIS
 
-*  If PREMIS <act> = Disseminate and PREMIS <restriction> = Allow, Publish = TRUE
-*  If PREMIS <act> = Disseminate and PREMIS <restriction> = Conditional, Publish = FALSE
-*  If PREMIS <act> = Disseminate and PREMIS <restriction> = Disallow, Publish = FALSE
+*  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Allow, Publish = TRUE
+*  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Conditional, Publish = FALSE
+*  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Disallow, Publish = FALSE
 	
