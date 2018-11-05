@@ -82,10 +82,10 @@ Log files are located in `/var/log/archivematica/MCPClient/`
 To restart Archivematica, enter the following (order sensitive) from a shell window logged into the Archivematica server:
 
 ```
-sudo stop archivematica-mcp-client
-sudo stop archivematica-mcp-server
-sudo start archivematica-mcp-server
-sudo start archivematica-mcp-client
+sudo service gearman-job-server restart
+sudo service archivematica-mcp-server restart
+sudo service archivematica-mcp-client restart
+sudo service archivematica-dashboard restart
 ```
 
 ### Troubleshooting ArchivesSpace DIP Upload
