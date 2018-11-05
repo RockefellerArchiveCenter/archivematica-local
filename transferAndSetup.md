@@ -116,31 +116,33 @@ Generally, two metadata files are included in RAC transfers. These are:
 
 In order to automatically match access files with components in ArchivesSpace, a CSV file with the filename `archivesspaceids.csv` must be included in the `/metadata` directory in the transfer. The first column contains the filenames and the second column contains the refid of the component the file needs to be linked to. There is no header row.
 
-Note that filenames, including file extensions, are case sensitive, and should contain the full path either including or after the `/objects` directory. If an access version of the file is included in the transfer, the filepath to include in the first column should be the access version; if an access version is not included, the filepath in the first column should be for the original object.
+Note that filenames, including file extensions, are case sensitive, and should contain the full path either including or after the `/objects` directory. If a manually normalized access version of the file is included in the transfer, the filepath to include in the first column should be the access version; if an access version is not included, the filepath in the first column should be for the original object. For digitized transfers with `/access` and `/service` directories, the filepath should be to the original object. For digitized transfers where the access copy is a multi-page pdf but the preservation copies are multiple tif files, the filepath should be for the pdf file(s) only, but for the pdf file(s) that sit in the `/objects` directory.
 
 *No access version:*
 
-| Youth Organizations.doc | ref5086\_rts |
-| Meeting Minutes.pdf | ref5086\_rts |
-| Youth Organizations Revised.doc | ref5086\_rts |
+| objects/Youth Organizations.doc | ref5086\_rts |
+| objects/Meeting Minutes.pdf | ref5086\_rts |
+| objects/Youth Organizations Revised.doc | ref5086\_rts |
 
-*Access version - manually normalized:*
+*Manually normailzed born digital with access version*
 
-| manualNormalization/access/Youth Organizations.docx | examplerefid |
-| manualNormalization/access/Meeting Minutes.pdf | examplerefid |
-| manualNormalization/access/Youth Organizations Revised.docx | examplerefid |
+| objects/manualNormalization/access/Youth Organizations.docx | examplerefid |
+| objects/manualNormalization/access/Meeting Minutes.pdf | examplerefid |
+| objects/manualNormalization/access/Youth Organizations Revised.docx | examplerefid |
 
-*Access version - digitized:*
+*Digitized with jpg access copies*
 
-| access/examplerefid_001.jpg | examplerefid |
-| access/examplerefid_002.jpg | examplerefid |
-| access/examplerefid_003.jpg | examplerefid |
+| objects/access/examplerefid_001.jpg | examplerefid |
+| objects/access/examplerefid_002.jpg | examplerefid |
+| objects/access/examplerefid_003.jpg | examplerefid |
 
+*Digitized with pdf access copy*
 
+| objects/access/examplerefid.pdf | examplerefid |
 
 ### PREMIS CSV
 
-PREMIS rights information is included in the METS file in the AIP and is used to write information to ArchivesSpace as part of the ArchivesSpace DIP Upload Integration. For details on how PREMIS rights information is mapped to ArchivesSpace, see the [Appendix](appendix#premis-mapping). In order to include rights information with the transfer, a `rights.csv` file must be included in the `/metadata` directory of the transfer. 
+PREMIS rights information is included in the METS file in the AIP and is used to write information to ArchivesSpace as part of the ArchivesSpace DIP Upload Integration. For details on how PREMIS rights information is mapped to ArchivesSpace, see the [Appendix](appendix#premis-mapping). In order to include rights information with the transfer, a `rights.csv` file must be included in the `/metadata` directory of the transfer. For digitized transfers, the rights.csv should include files in the `/objects` directory, including (if applicable) the multipage pdf file.
 
 *Example:*
 
@@ -158,6 +160,10 @@ PREMIS rights information is included in the METS file in the AIP and is used to
 | r2fp9q4b_003.tif | donor | | | | 1/1/90 | open | | | Donor note | disseminate | Allow | 1/1/90 | open | Grant note | | | |
 
 </div>
+
+## Processing Configuration
+
+The processing configuration administration page of the dashboard allows users to configure the job decision points presented by Archivematica during transfer and ingest. This is set in the [administration tab](administration#processing-configuration). A processing congfiguration file can be included with a transfer that is ingested either via the Dashboard or the automated pipeline; if included, it will override the configuration set as the "default" in the dashboard. To create a processing configuration file, download the processing configuration from the Dashboard, and include it as `processingMCP.xml` in the top-level directory of the transfer.
 
 ## Transfer Source
 

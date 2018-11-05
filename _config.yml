@@ -1,5 +1,6 @@
-public: false
+public: true
 type: "docs"
+category: "preservation"
 tags:
   - "digital preservation"
   - "archivematica"

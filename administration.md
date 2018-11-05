@@ -11,8 +11,6 @@ The processing configuration administration page of the dashboard allows users t
 
 For the processing configuring for each workflow, see the [Appendix](appendix#processing-configuration).
 
-Failed ingests can be viewed and deleted here.
-
 
 ### DIP Upload (ArchivesSpace)
 Before ingesting digital objects destined for ArchivesSpace, ensure that the ArchivesSpace DIP upload settings in the administration tab of the dashboard have been set.
@@ -84,10 +82,10 @@ Log files are located in `/var/log/archivematica/MCPClient/`
 To restart Archivematica, enter the following (order sensitive) from a shell window logged into the Archivematica server:
 
 ```
-sudo stop archivematica-mcp-client
-sudo stop archivematica-mcp-server
-sudo start archivematica-mcp-server
-sudo start archivematica-mcp-client
+sudo service gearman-job-server restart
+sudo service archivematica-mcp-server restart
+sudo service archivematica-mcp-client restart
+sudo service archivematica-dashboard restart
 ```
 
 ### Troubleshooting ArchivesSpace DIP Upload
