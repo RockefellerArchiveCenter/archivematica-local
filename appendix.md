@@ -71,6 +71,39 @@ These should be the default settings for legacy born digital materials:
 |  Store DIP                                                                       | none |  |
 |  Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
 
+### Born Digital
+
+These should be the default settings for born digital materials ingested from Aurora:
+
+|  Step                                                                            |  Action | Rationale |
+|  ------------------------------------------------------------------------------- | ------- |  |
+|  Assign UUIDs to directories                                                     | No |  |
+|  Send transfer to quarantine                                                     | No |  |
+|  Remove from quarantine after \_\_ days                                          | 28 |  |
+|  Generate transfer structure report                                              | No |  |
+|  Select file format identification command (Transfer)                            | File extension |  |
+|  Extract packages                                                                | No |  |
+|  Delete packages after extraction                                                | Yes |  |
+| Perform policy checks on originals                                               | No |  |
+|  Examine contents                                                                | Skip examine contents |  |
+|  Create SIP(s)                                                                   | Create single SIP and continue processing |  |
+|  Select file format identification command (Ingest)                              | Identify using Fido |  |
+|  Normalize                                                                       | Normalize for preservation and access |  |
+|  Approve normalization                                                           | Yes |  |
+| Perform policy checks on preservation derivatives                                | No |  |
+| Perform policy checks on access derivatives                                      | No |  |
+| Bind PIDs                                                                        | No |  |
+| Document empty directories                                                       | No |  |
+|  Reminder: add metadata if desired                                               | Continue |  |
+|  Transcribe files (OCR)                                                          | No |  |
+|  Select file format identification command (Submission documentation & metadata) | File extension |  |
+|  Select compression algorithm                                                    | 7z using bzip2 |  |
+|  Select compression level                                                        | 5 - normal compression mode |  |
+|  Store AIP                                                                       | none |  |
+|  Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
+|  Store DIP                                                                       | none |  |
+|  Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
+
 ## PREMIS Mapping
 
 ### Data mapping
