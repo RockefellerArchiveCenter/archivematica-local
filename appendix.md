@@ -18,8 +18,8 @@ These should be the default settings for digitized materials:
 | Select file format identification command (Transfer)                            | File extension | Digitized ingests contain a small set of known file formats |
 | Extract packages                                                                | No     | Digitized ingests should not contain packages (e.g., zip files) |
 | Delete packages after extraction                                                | Yes    |  |
-| Perform policy checks on originals                                              | No     |  |
-| Examine contents                                                                | Skip examine contents |  |
+| Perform policy checks on originals                                              | No     | Policy checks refers to MediaConch, which is only used for A/V |
+| Examine contents                                                                | Skip examine contents | Runs Bulk Extractor - not necessary for digitized materials, which are already processed |
 | Create SIP(s)                                                                   | Create single SIP and continue processing |  |
 | Select file format identification command (Ingest)                              | Use existing data |  |
 | Normalize                                                                       | Do not normalize | Digitized ingests contain preservation masters, as well as an `access` directory that will generate a DIP |
@@ -40,7 +40,7 @@ These should be the default settings for digitized materials:
 
 ### Legacy Born Digital
 
-These should be the default settings for legacy born digital materials:
+Legacy born digital materials are those that have been recoverd from digital media items or otherwise accessioned outside of Aurora, and have been fully processed by a processing archivist before ingest into Archivematica. These should be the default settings for legacy born digital materials:
 
 | Step                                                                            | Action | Rationale |
 | ------------------------------------------------------------------------------- | ------ |  |
