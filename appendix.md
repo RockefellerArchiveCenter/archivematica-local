@@ -157,7 +157,7 @@ These should be the default settings for born digital materials ingested from Au
 
 #### Publish
 
-*  If PREMIS _act_ = Publish, populate ConditionsGoverningUse with contents of PREMIS rightsGrantedNote
+*  If PREMIS _act_ = Publish, populate _ConditionsGoverningUse_ with contents of PREMIS rightsGrantedNote
 
 ### Publish: Base on PREMIS
 
