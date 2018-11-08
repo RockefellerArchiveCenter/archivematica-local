@@ -112,17 +112,17 @@ These should be the default settings for born digital materials ingested from Au
 
 *  **Title:** Derive from original filename of digital object.
 *  **Identifier:** Populate with Archivematica DIP URI without digital object filename.
-*  **Publish:** Set as TRUE or FALSE based on PREMIS statement (see Publish: Base on PREMIS below).
+*  **Publish:** Set as TRUE or FALSE based on PREMIS statement (see Publish: Base on PREMIS below) or administration settings.
 *  **Type:** Populate with value from Object Type field in Archivematica administration settings. If no data entered in this field, leave empty.
 *  **Language:** Derive from parent component in ArchivesSpace.
-*  **Restrictions?: Set as TRUE or FALSE based on PREMIS statement (see Restrictions:** Base on PREMIS below).
+*  **Restrictions?:** Set as TRUE or FALSE based on PREMIS statement (see Restrictions: Base on PREMIS below) or administration settings.
 
 #### File Version
 
 *  **File URI:** Populate with URL prefix from URI Prefix field in  Archivematica administration settings, plus file UUID and filename, for example: http://storage.rockarch.org/[UUID]-filename.
 *  **Use Statement:** Populate with value from Use Statement field in Archivematica administration settings.
-*  **XLink Attribute Actuate:** Derive from PREMIS statement. If no PREMIS statements are present, base on value from XLink Attribute Actuate field in Archivematica administration settings.
-*  **XLink Show Attribute: Derive from PREMIS statement**. If no PREMIS statements are present, base on value from XLink Show Attribute field in Archivematica administration settings.
+*  **XLink Attribute Actuate:** Base on value from XLink Attribute Actuate field in Archivematica administration settings.
+*  **XLink Show Attribute:** Base on value from XLink Show Attribute field in Archivematica administration settings.
 *  **File Format Name:** Populate with DIP digital object file format name as identified by Archivematica.
 *  **File Format Version:** Populate with DIP digital object file format version as identified by Archivematica.
 *  **File Size:** Populate with DIP digital object file size measured in bytes, as identified by Archivematica.
@@ -152,7 +152,7 @@ These should be the default settings for born digital materials ingested from Au
 *  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Allow, Restrictions? = FALSE
 *  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Conditional, Restrictions? = TRUE
 *  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Disallow, Restrictions? = TRUE
-*  If PREMIS _act_ = Disseminate, populate Conditions Governing Access note with contents of PREMIS rightsGrantedNote
+*  If PREMIS _act_ = Disseminate, populate Conditions Governing Access note with contents of PREMIS _rightsGrantedNote_
 *  When Restrictions?=TRUE, both XLink Attribute Actuate and XLink Attribute Show will be set to “none.”
 
 #### Publish
