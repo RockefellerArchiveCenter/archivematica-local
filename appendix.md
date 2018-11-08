@@ -26,10 +26,10 @@ These should be the default settings for digitized materials:
 | Approve normalization                                                           | None   |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
-| Bind PIDs                                                                       | No     |  |
-| Document empty directories                                                      | No     |  |
+| Bind PIDs                                                                       | No     | This functionality is not currently used |
+| Document empty directories                                                      | No     | Empty directories do not exist in RAC-created transfers |
 | Reminder: add metadata if desired                                               | Continue | Digitized ingests include a rights.csv file, so metadata does not need to be added manually |
-| Transcribe files (OCR)                                                          | No     |  |
+| Transcribe files (OCR)                                                          | No     | This uses Tesseract to OCR TIFs; RAC digitized transfers include access PDFs that have already been OCR'd |
 | Select file format identification command (Submission documentation & metadata) | File extension |  |
 | Select compression algorithm                                                    | 7z using bzip2 |  |
 | Select compression level                                                        | 5 - normal compression mode |  |
@@ -48,7 +48,7 @@ Legacy born digital materials are those that have been recoverd from digital med
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
 | Generate transfer structure report                                              | No     |  |
-| Select file format identification command (Transfer)                            | File extension |  |
+| Select file format identification command (Transfer)                            | Identify using Siegfried |  |
 | Extract packages                                                                | No     |  |
 | Delete packages after extraction                                                | Yes    |  |
 | Perform policy checks on originals                                              | No     |  |
@@ -77,15 +77,15 @@ These should be the default settings for born digital materials ingested from Au
 
 | Step                                                                            | Action | Rationale |
 | ------------------------------------------------------------------------------- | ------ |  |
-| Assign UUIDs to directories                                                     | No     |  |
+| Assign UUIDs to directories                                                     | No     | Since directory structure conforms to RAC spec, this is not necessary |
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
-| Generate transfer structure report                                              | No     |  |
+| Generate transfer structure report                                              | No     | Since the structure of the transfer is not changed during ingest, this is not necessary |
 | Select file format identification command (Transfer)                            | Identify using Siegfried |  |
-| Extract packages                                                                | No     |  |
+| Extract packages                                                                | ???     |  |
 | Delete packages after extraction                                                | Yes    |  |
-| Perform policy checks on originals                                              | No     |  |
-| Examine contents                                                                | Skip examine contents |  |
+| Perform policy checks on originals                                              | No     | Policy checks refers to MediaConch, which is only used for A/V |
+| Examine contents                                                                | Skip examine contents | Runs BulkExtractor; unclear what the benefits are of doing this at ingest |
 | Create SIP(s)                                                                   | Create single SIP and continue processing |  |
 | Select file format identification command (Ingest)                              | Identify using Fido |  |
 | Normalize                                                                       | Normalize for preservation and access |  |
