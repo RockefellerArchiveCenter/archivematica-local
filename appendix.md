@@ -88,7 +88,7 @@ These should be the default settings for born digital materials ingested from Au
 | Examine contents                                                                | Skip examine contents | Runs BulkExtractor; unclear what the benefits are of doing this at ingest |
 | Create SIP(s)                                                                   | Create single SIP and continue processing |  |
 | Select file format identification command (Ingest)                              | Identify using Fido |  |
-| Normalize                                                                       | Normalize for preservation and access |  |
+| Normalize                                                                       | Normalize for preservation | DIP generation not used in this workflow |
 | Approve normalization                                                           | Yes    |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
