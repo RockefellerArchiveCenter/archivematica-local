@@ -164,4 +164,5 @@ These should be the default settings for born digital materials ingested from Au
 *  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Allow, Publish = TRUE
 *  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Conditional, Publish = FALSE
 *  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Disallow, Publish = FALSE
+
 	

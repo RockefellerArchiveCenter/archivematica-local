@@ -21,6 +21,16 @@ In order to save changes to the ArchivesSpace DIP upload configuration, you must
 
 The development dashboard should use the ArchivesSpace development IP address, and the production dashboard should use the ArchivesSpace productin IP address.
 
+*  **Publish:** Base on PREMIS
+*  **Object Type:** Leave blank.
+*  **Restrictions?:** Set as TRUE or FALSE based on PREMIS statement (see Restrictions: Base on PREMIS below) or administration settings.
+*  **URI Prefix:** storage.rockarch.org
+*  **Use Statement:** Leave blank.
+*  **XLink Attribute Actuate:** 
+*  **XLink Show Attribute:** 
+*  **Conditions Governing Access note:** Leave blank.
+*  **Conditions Governing Use note:** Leave blank.
+
 ## Storage Service
 
 The Archivematica Storage Service allows the configuration of storage spaces associated with multiple Archivematica pipelines. It allows a storage administrator to configure what storage is available to each Archivematica installation, both locally and remote. The Storage Service is a separate application from the Dashboard; stored AIPs can be viewed in the `Archival storage` tab in the Archivematica dashboard.
