@@ -85,7 +85,7 @@ The Administration section manages the users and settings for the Storage Servic
 
 ## Troubleshooting
 
-Log files are located in `/var/log/archivematica/MCPClient/`
+Log files are located in `/var/log/archivematica/MCPClient/` For more information, see [Archivematica Technical Training: Diagnostics Guide](https://docs.google.com/document/d/1GybyH7X_gpZ7wpYVo5d9__LeGNuXYCky0oairJGJAmo/edit#) and [Archivematica IT Infrastructure Documentation](https://docs.google.com/document/d/1NDzGHBGuPFa7GTHCMEl3D2nvvdZRxG2FpdsGAYoG31I/edit#heading=h.ngl4bsv7skxi).
 
 ### Restart MCP Services
 
