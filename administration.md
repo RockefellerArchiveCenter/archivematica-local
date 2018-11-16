@@ -21,13 +21,12 @@ In order to save changes to the ArchivesSpace DIP upload configuration, you must
 
 The development dashboard should use the ArchivesSpace development IP address, and the production dashboard should use the ArchivesSpace productin IP address.
 
-*  **Publish:** Base on PREMIS
+*  **Restrictions apply:** Base on PREMIS
+*  **XLink Show:** New
+*  **XLink Actuate:** onRequest
 *  **Object Type:** Leave blank.
-*  **Restrictions?:** Set as TRUE or FALSE based on PREMIS statement (see Restrictions: Base on PREMIS below) or administration settings.
-*  **URI Prefix:** storage.rockarch.org
+*  **URI Prefix:** http://storage.rockarch.org
 *  **Use Statement:** Leave blank.
-*  **XLink Attribute Actuate:** 
-*  **XLink Show Attribute:** 
 *  **Conditions Governing Access note:** Leave blank.
 *  **Conditions Governing Use note:** Leave blank.
 
