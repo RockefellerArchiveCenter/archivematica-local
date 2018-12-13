@@ -77,31 +77,31 @@ These should be the default settings for born digital materials ingested from Au
 
 | Step                                                                            | Action | Rationale |
 | ------------------------------------------------------------------------------- | ------ |  |
-| Assign UUIDs to directories                                                     | No     | Since directory structure conforms to RAC spec, this is not necessary |
+| Assign UUIDs to directories                                                     | Yes     |  |
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
 | Generate transfer structure report                                              | No     | Since the structure of the transfer is not changed during ingest, this is not necessary |
 | Select file format identification command (Transfer)                            | Identify using Siegfried |  |
-| Extract packages                                                                | ???     |  |
+| Extract packages                                                                | No     |  |
 | Delete packages after extraction                                                | Yes    |  |
 | Perform policy checks on originals                                              | No     | Policy checks refers to MediaConch, which is only used for A/V |
 | Examine contents                                                                | Skip examine contents | Runs BulkExtractor; unclear what the benefits are of doing this at ingest |
 | Create SIP(s)                                                                   | Create single SIP and continue processing |  |
 | Select file format identification command (Ingest)                              | Identify using Fido |  |
-| Normalize                                                                       | Normalize for preservation | DIP generation not used in this workflow |
+| Normalize                                                                       | Normalize for preservation and access |  |
 | Approve normalization                                                           | Yes    |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
 | Bind PIDs                                                                       | No     |  |
-| Document empty directories                                                      | No     |  |
+| Document empty directories                                                      | Yes    |  |
 | Reminder: add metadata if desired                                               | Continue |  |
 | Transcribe files (OCR)                                                          | No     |  |
 | Select file format identification command (Submission documentation & metadata) | File extension |  |
 | Select compression algorithm                                                    | 7z using bzip2 |  |
 | Select compression level                                                        | 5 - normal compression mode |  |
-| Store AIP                                                                       | none   |  |
+| Store AIP                                                                       | Yes   |  |
 | Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
-| Store DIP                                                                       | none   |  |
+| Store DIP                                                                       | Yes   |  |
 | Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
 
 ## PREMIS Mapping
