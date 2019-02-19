@@ -1,4 +1,3 @@
----
 layout: docs
 title:  "RAC Archivematica | Administration"
 ---
@@ -89,12 +88,10 @@ Log files are located in `/var/log/archivematica/MCPClient/` For more informatio
 ### Restart MCP Services
 
 To restart Archivematica, enter the following (order sensitive) from a shell window logged into the Archivematica server:
-
-<div class="docs-example codeblock">
-  sudo service gearman-job-server restart <br/>
-  sudo service archivematica-mcp-server restart <br/>
-  sudo service archivematica-mcp-client restart <br/>
-  sudo service archivematica-dashboard restart
+<div class="docs-example code codeblock">sudo service gearman-job-server restart
+sudo service archivematica-mcp-server restart
+sudo service archivematica-mcp-client restart
+sudo service archivematica-dashboard restart
 </div>
 
 ### Troubleshooting ArchivesSpace DIP Upload
@@ -106,15 +103,13 @@ As root, navigate to `/var/log/archivematica/MCPClient/`. To find the relevant l
 1\. Look for the sqlite db used by automation tools. It's path is available in `/etc/archivematica/automation-tools/transfers-std.conf`<br/>
 2\. Create a backup: `cp /var/archivematica/automation-tools/transfers-std.db{,.bkp}`<br/>
 3\. List current transfers
-<div class=" docs-example codeblock">
-sqlite3  /var/archivematica/automation-tools/transfers-std.db <br/>
-sqlite> select * from unit; <br/>
-1|6c4db7f1-d4ae-40df-a5f1-ebecb7948060|archivematica_sip_419cdea4fc9e4f82bf7a7b779a1c1966|ingest|COMPLETE||0 <br/>
-2|b7e1010d-25c3-4873-aa99-ecf063de33ce|invalidPREMIStest|transfer|FAILED||0 <br/>
-3|e0bf1ae3-fa78-41a8-9fc1-8ad5349b2371|logs|transfer|PRO <br/>
+<div class="docs-example code codeblock">sqlite3  /var/archivematica/automation-tools/transfers-std.db
+sqlite> select * from unit;
+1|6c4db7f1-d4ae-40df-a5f1-ebecb7948060|archivematica_sip_419cdea4fc9e4f82bf7a7b779a1c1966|ingest|COMPLETE||0
+2|b7e1010d-25c3-4873-aa99-ecf063de33ce|invalidPREMIStest|transfer|FAILED||0
+3|e0bf1ae3-fa78-41a8-9fc1-8ad5349b2371|logs|transfer|PRO
 </div>
 4\. Remove the failed transfer:
-<div class=" docs-example codeblock">
-sqlite> delete from unit where id=3;<br/>
+  <div class="docs-example code codeblock">sqlite> delete from unit where id=3;
 sqite> .quit
 </div>
