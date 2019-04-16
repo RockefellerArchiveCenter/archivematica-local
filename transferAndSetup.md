@@ -11,7 +11,7 @@ Archivematica requires a directory structure that is compliant with Archivematic
 *  transfers with multiple versions of digitized files
 *  transfer with metadata, such as an archivesspaceids.csv or rights.csv
 *  transfers with manually normalized files
-*  transfers with submission documention
+*  transfers with submission documentation
 
 As these are the vast majority of our use cases, all transfers ingested into Archivematica should be in a structured directory. A structured directory includes the following subdirectories:
 
