@@ -2,8 +2,7 @@ public: true
 type: "docs"
 category: "preservation"
 tags:
-  - "digital preservation"
-  - "archivematica"
+  - "workflow"
 title: "Guide to Using Archivematica"
 description: "Local Archivematica documentation."
 pages:
