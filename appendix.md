@@ -15,13 +15,13 @@ These should be the default settings for digitized materials:
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
 | Generate transfer structure report                                              | No     |  |
-| Select file format identification command (Transfer)                            | File extension | Digitized ingests contain a small set of known file formats |
+| Perform file format identification (Transfer)                                   | No     | Digitized ingests contain a small set of known file formats |
 | Extract packages                                                                | No     | Digitized ingests should not contain packages (e.g., zip files) |
 | Delete packages after extraction                                                | Yes    |  |
 | Perform policy checks on originals                                              | No     | Policy checks refers to MediaConch, which is only used for A/V |
 | Examine contents                                                                | Skip examine contents | Runs Bulk Extractor - not necessary for digitized materials, which are already processed |
 | Create SIP(s)                                                                   | Create single SIP and continue processing |  |
-| Select file format identification command (Ingest)                              | Use existing data |  |
+| Perform file format identification (Ingest)                                     | No      |  |
 | Normalize                                                                       | Do not normalize | Digitized ingests contain preservation masters, as well as an `access` directory that will generate a DIP |
 | Approve normalization                                                           | None   |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
@@ -48,13 +48,13 @@ Legacy born digital materials are those that have been recoverd from digital med
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
 | Generate transfer structure report                                              | No     |  |
-| Select file format identification command (Transfer)                            | Identify using Siegfried |  |
+| Perform file format identification (Transfer)                                   | Yes    |  |
 | Extract packages                                                                | No     |  |
 | Delete packages after extraction                                                | Yes    |  |
 | Perform policy checks on originals                                              | No     |  |
 | Examine contents                                                                | Skip examine contents |  |
 | Create SIP(s)                                                                   | Create single SIP and continue processing |  |
-| Select file format identification command (Ingest)                              | Identify using Fido |  |
+| Perform file format identification (Ingest)                                     | Yes    |  |
 | Normalize                                                                       | Normalize for preservation and access |  |
 | Approve normalization                                                           | Yes    |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
@@ -77,17 +77,17 @@ These should be the default settings for born digital materials ingested from Au
 
 | Step                                                                            | Action | Rationale |
 | ------------------------------------------------------------------------------- | ------ |  |
-| Assign UUIDs to directories                                                     | Yes     |  |
+| Assign UUIDs to directories                                                     | Yes    |  |
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
 | Generate transfer structure report                                              | No     | Since the structure of the transfer is not changed during ingest, this is not necessary |
-| Select file format identification command (Transfer)                            | Identify using Siegfried |  |
+| Perform file format identification  (Transfer)                                  | Yes    |  |
 | Extract packages                                                                | No     |  |
 | Delete packages after extraction                                                | Yes    |  |
 | Perform policy checks on originals                                              | No     | Policy checks refers to MediaConch, which is only used for A/V |
 | Examine contents                                                                | Skip examine contents | Runs BulkExtractor; unclear what the benefits are of doing this at ingest |
 | Create SIP(s)                                                                   | Create single SIP and continue processing |  |
-| Select file format identification command (Ingest)                              | Identify using Fido |  |
+| Perform file format identification  (Ingest)                                    | Yes    |  |
 | Normalize                                                                       | Normalize for preservation and access |  |
 | Approve normalization                                                           | Yes    |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
