@@ -127,9 +127,9 @@ Note that filenames, including file extensions, are case sensitive, and should c
 
 *Digitized with jpg access copies*
 
-| objects/access/examplerefid_001.jpg | examplerefid |
-| objects/access/examplerefid_002.jpg | examplerefid |
-| objects/access/examplerefid_003.jpg | examplerefid |
+| objects/examplerefid_001.tif | examplerefid |
+| objects/examplerefid_002.tif | examplerefid |
+| objects/examplerefid_003.tif | examplerefid |
 
 *Digitized with pdf access copy*
 
