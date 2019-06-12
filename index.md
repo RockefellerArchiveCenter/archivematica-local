@@ -9,7 +9,7 @@ This is the Rockefeller Archive Center's local documentation for Archivematica. 
  - **Ingest:** Steps to use the automation tools to ingest transfers, as well as the steps to manually ingest transfers using the Dashboard.
  - **Workflows by Content Type:** Workflow steps for digitized material, born digital, and A/V.
  - **Administration:** Details on the settings in the Dashboard's Administration tab, storage service settings, automation tools configuration, and system troubleshooting.
- - **Appendix:** Details on the Processing Configuration for each content type and details for the ArchivesSpace integration PREMIS mapping.
+ - **Appendix:** Details on the Processing Configuration for each content type, details for the ArchivesSpace integration PREMIS mapping, and local configurations of the FPR.
 
 For system administration information, including IP addresses and logins, see the [Archivematica Info Sheet]().
 
