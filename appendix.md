@@ -24,17 +24,19 @@ These should be the default settings for digitized materials:
 | Perform file format identification (Ingest)                                     | No      |  |
 | Normalize                                                                       | Do not normalize | Digitized ingests contain preservation masters, as well as an `access` directory that will generate a DIP |
 | Approve normalization                                                           | None   |  |
+| Generate thumbnails                               | No     |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
 | Bind PIDs                                                                       | No     | This functionality is not currently used |
 | Document empty directories                                                      | No     | Empty directories do not exist in RAC-created transfers |
 | Reminder: add metadata if desired                                               | Continue | Digitized ingests include a rights.csv file, so metadata does not need to be added manually |
 | Transcribe files (OCR)                                                          | No     | This uses Tesseract to OCR TIFs; RAC digitized transfers include access PDFs that have already been OCR'd |
-| Select file format identification command (Submission documentation & metadata) | File extension |  |
+| Perform file format identification command (Submission documentation & metadata) | No |  |
 | Select compression algorithm                                                    | 7z using bzip2 |  |
 | Select compression level                                                        | 5 - normal compression mode |  |
 | Store AIP                                                                       | Yes    |  |
 | Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
+| Upload DIP                                                                       | Upload DIP to ArchivesSpace |  |
 | Store DIP                                                                       | Yes    |  |
 | Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
 
@@ -57,17 +59,19 @@ Legacy born digital materials are those that have been recoverd from digital med
 | Perform file format identification (Ingest)                                     | Yes    |  |
 | Normalize                                                                       | Normalize for preservation and access |  |
 | Approve normalization                                                           | Yes    |  |
+| Generate thumbnails                               | No     |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
 | Bind PIDs                                                                       | No     |  |
 | Document empty directories                                                      | No     |  |
 | Reminder: add metadata if desired                                               | Continue |  |
 | Transcribe files (OCR)                                                          | No     |  |
-| Select file format identification command (Submission documentation & metadata) | File extension |  |
+| Perform file format identification command (Submission documentation & metadata) | No |  |
 | Select compression algorithm                                                    | 7z using bzip2 |  |
 | Select compression level                                                        | 5 - normal compression mode |  |
 | Store AIP                                                                       | none   |  |
 | Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
+| Upload DIP                                                                       | Upload DIP to ArchivesSpace |  |
 | Store DIP                                                                       | none   |  |
 | Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
 
@@ -90,17 +94,19 @@ These should be the default settings for born digital materials ingested from Au
 | Perform file format identification  (Ingest)                                    | Yes    |  |
 | Normalize                                                                       | Normalize for preservation and access |  |
 | Approve normalization                                                           | Yes    |  |
+| Generate thumbnails                               | No     |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
 | Bind PIDs                                                                       | No     |  |
 | Document empty directories                                                      | Yes    |  |
 | Reminder: add metadata if desired                                               | Continue |  |
 | Transcribe files (OCR)                                                          | No     |  |
-| Select file format identification command (Submission documentation & metadata) | File extension |  |
+| Perform file format identification command (Submission documentation & metadata) | Yes |  |
 | Select compression algorithm                                                    | 7z using bzip2 |  |
 | Select compression level                                                        | 5 - normal compression mode |  |
 | Store AIP                                                                       | Yes   |  |
 | Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
+| Upload DIP                                                                       | Do not upload DIP |  |
 | Store DIP                                                                       | Yes   |  |
 | Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
 
