@@ -25,7 +25,7 @@ The development dashboard should use the ArchivesSpace development IP address, a
 *  **XLink Show:** New
 *  **XLink Actuate:** onRequest
 *  **Object Type:** Leave blank.
-*  **URI Prefix:** http://storage.rockarch.org
+*  **URI Prefix:** https://storage.rockarch.org
 *  **Use Statement:** Leave blank.
 *  **Conditions Governing Access note:** Leave blank.
 *  **Conditions Governing Use note:** Leave blank.
