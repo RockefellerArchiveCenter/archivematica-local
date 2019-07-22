@@ -3,25 +3,16 @@ layout: docs
 title:  "RAC Archivematica | Ingest"
 ---
 
-## Automation Tools
+## API
 
-To ingest a transfer using the automation tools, run a shell script from the Archivematica server that runs the automate transfer tool. The shell script calls `transfers/transfer.py` and passes arguments. `transfers/transfer.py` is used to prepare transfers, move them into the processing location, and take actions when user input is required.
+Use the [startTransfer.py](https://github.com/RockefellerArchiveCenter/scripts/blob/master/archivematica/startTransfer.py) Python script to start transfers via the API. The script requires the following information:
 
-Generally, a user will not need to call the script. A cron job has been set up to run the shell script that runs the automate transfer tool. This means that a script will watch a designated directory for a new transfer to ingest and will run the automated transfer script.
+* a list of transfers
+* dashboard username
+* dashboard API key
+* base url for API endpoint of dashboard
+* locatoin UUID for transfer source
 
-Only one transfer is sent to the pipeline at a time, the scripts wait until the current transfer is resolved (failed, rejected or stored as an AIP) before automatically starting the next available transfer.
-
-Please see the administration page for more information on configuring the shell scripts that call `transfers/transfer.py`.
-
-The script can be run from a shell window like:
-
-```
-user@host:/etc/archivematica/automation-tools$ sudo -u archivematica ./transfer-script.sh
-```
-
-When running, automated transfers stores its working state in a sqlite database.  It contains a record of all the transfers that have been processed.  In a testing environment, deleting this file will cause the tools to re-process any and all folders found in the Transfer Source Location.
-
-The 2 scripts in the automation directory are `transfer-script-std-m.sh` and `transfer-script-unzbag-m.sh`.
 
 ## Manual Ingest
 
