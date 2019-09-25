@@ -234,7 +234,7 @@ This is only necessary if we are upgrading Archivematica on new VMs. This step i
 
 ### 8. Upgrade (Artefactual)
 
-Archivematica Product Owner alerts key staff to window where Archviematica will be down. Artefactual upgrades both pipelines and the storage service in our production environment.
+Archivematica Product Owner alerts key staff to window where Archivematica production environment will be down. Artefactual upgrades both pipelines and the storage service in our production environment.
 
 ### 9. Update Integrated Applications (Archivematica Product Owner)
 
