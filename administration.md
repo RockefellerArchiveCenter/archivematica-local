@@ -97,6 +97,6 @@ sudo service archivematica-dashboard restart
 
 ### Troubleshooting ArchivesSpace DIP Upload
 
-As root, navigate to `/var/log/archivematica/MCPClient/`. To find the relevant line(s) in `MCPClient.debug.log`, type `grep "upload-archivesspace" MCPClient.debug.log`.
+As root user, navigate to `/var/log/archivematica/MCPClient/`. To find the relevant line(s) in `MCPClient.debug.log`, search for the microservice name by typing `grep "upload-archivesspace" MCPClient.debug.log`.
 
 
