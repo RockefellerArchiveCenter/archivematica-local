@@ -15,26 +15,28 @@ These should be the default settings for digitized materials:
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
 | Generate transfer structure report                                              | No     |  |
-| Select file format identification command (Transfer)                            | File extension | Digitized ingests contain a small set of known file formats |
+| Perform file format identification (Transfer)                                   | No     | Digitized ingests contain a small set of known file formats |
 | Extract packages                                                                | No     | Digitized ingests should not contain packages (e.g., zip files) |
 | Delete packages after extraction                                                | Yes    |  |
 | Perform policy checks on originals                                              | No     | Policy checks refers to MediaConch, which is only used for A/V |
 | Examine contents                                                                | Skip examine contents | Runs Bulk Extractor - not necessary for digitized materials, which are already processed |
 | Create SIP(s)                                                                   | Create single SIP and continue processing |  |
-| Select file format identification command (Ingest)                              | Use existing data |  |
+| Perform file format identification (Ingest)                                     | No      |  |
 | Normalize                                                                       | Do not normalize | Digitized ingests contain preservation masters, as well as an `access` directory that will generate a DIP |
 | Approve normalization                                                           | None   |  |
+| Generate thumbnails                               | No     |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
 | Bind PIDs                                                                       | No     | This functionality is not currently used |
 | Document empty directories                                                      | No     | Empty directories do not exist in RAC-created transfers |
 | Reminder: add metadata if desired                                               | Continue | Digitized ingests include a rights.csv file, so metadata does not need to be added manually |
 | Transcribe files (OCR)                                                          | No     | This uses Tesseract to OCR TIFs; RAC digitized transfers include access PDFs that have already been OCR'd |
-| Select file format identification command (Submission documentation & metadata) | File extension |  |
+| Perform file format identification command (Submission documentation & metadata) | No |  |
 | Select compression algorithm                                                    | 7z using bzip2 |  |
 | Select compression level                                                        | 5 - normal compression mode |  |
 | Store AIP                                                                       | Yes    |  |
 | Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
+| Upload DIP                                                                       | Upload DIP to ArchivesSpace |  |
 | Store DIP                                                                       | Yes    |  |
 | Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
 
@@ -48,26 +50,28 @@ Legacy born digital materials are those that have been recoverd from digital med
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
 | Generate transfer structure report                                              | No     |  |
-| Select file format identification command (Transfer)                            | Identify using Siegfried |  |
+| Perform file format identification (Transfer)                                   | Yes    |  |
 | Extract packages                                                                | No     |  |
 | Delete packages after extraction                                                | Yes    |  |
 | Perform policy checks on originals                                              | No     |  |
 | Examine contents                                                                | Skip examine contents |  |
 | Create SIP(s)                                                                   | Create single SIP and continue processing |  |
-| Select file format identification command (Ingest)                              | Identify using Fido |  |
+| Perform file format identification (Ingest)                                     | Yes    |  |
 | Normalize                                                                       | Normalize for preservation and access |  |
 | Approve normalization                                                           | Yes    |  |
+| Generate thumbnails                               | No     |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
 | Bind PIDs                                                                       | No     |  |
 | Document empty directories                                                      | No     |  |
 | Reminder: add metadata if desired                                               | Continue |  |
 | Transcribe files (OCR)                                                          | No     |  |
-| Select file format identification command (Submission documentation & metadata) | File extension |  |
+| Perform file format identification command (Submission documentation & metadata) | No |  |
 | Select compression algorithm                                                    | 7z using bzip2 |  |
 | Select compression level                                                        | 5 - normal compression mode |  |
 | Store AIP                                                                       | none   |  |
 | Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
+| Upload DIP                                                                       | Upload DIP to ArchivesSpace |  |
 | Store DIP                                                                       | none   |  |
 | Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
 
@@ -77,30 +81,32 @@ These should be the default settings for born digital materials ingested from Au
 
 | Step                                                                            | Action | Rationale |
 | ------------------------------------------------------------------------------- | ------ |  |
-| Assign UUIDs to directories                                                     | Yes     |  |
+| Assign UUIDs to directories                                                     | Yes    |  |
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
 | Generate transfer structure report                                              | No     | Since the structure of the transfer is not changed during ingest, this is not necessary |
-| Select file format identification command (Transfer)                            | Identify using Siegfried |  |
+| Perform file format identification  (Transfer)                                  | Yes    |  |
 | Extract packages                                                                | No     |  |
 | Delete packages after extraction                                                | Yes    |  |
 | Perform policy checks on originals                                              | No     | Policy checks refers to MediaConch, which is only used for A/V |
 | Examine contents                                                                | Skip examine contents | Runs BulkExtractor; unclear what the benefits are of doing this at ingest |
 | Create SIP(s)                                                                   | Create single SIP and continue processing |  |
-| Select file format identification command (Ingest)                              | Identify using Fido |  |
+| Perform file format identification  (Ingest)                                    | Yes    |  |
 | Normalize                                                                       | Normalize for preservation and access |  |
 | Approve normalization                                                           | Yes    |  |
+| Generate thumbnails                               | No     |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
 | Bind PIDs                                                                       | No     |  |
 | Document empty directories                                                      | Yes    |  |
 | Reminder: add metadata if desired                                               | Continue |  |
 | Transcribe files (OCR)                                                          | No     |  |
-| Select file format identification command (Submission documentation & metadata) | File extension |  |
+| Perform file format identification command (Submission documentation & metadata) | Yes |  |
 | Select compression algorithm                                                    | 7z using bzip2 |  |
 | Select compression level                                                        | 5 - normal compression mode |  |
 | Store AIP                                                                       | Yes   |  |
 | Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
+| Upload DIP                                                                       | Do not upload DIP |  |
 | Store DIP                                                                       | Yes   |  |
 | Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
 
@@ -165,4 +171,81 @@ These should be the default settings for born digital materials ingested from Au
 *  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Conditional, Publish = FALSE
 *  If PREMIS _act_ = Disseminate and PREMIS _restriction_ = Disallow, Publish = FALSE
 
-	
+## FPR Customatizations
+
+The following customizations have been added to the Format Policy Registry (the "Preservation Planning" tab):
+
+### Characterization Rules
+
+*  ffprobe and MediaInfo should be disabled for JPG and TIFF files, as ExifTool is sufficient for characterizing these formats
+
+## ## Upgrading to a new release of Archivematica
+
+### 1. Review Release Notes (Archivematica Product Owner)
+
+Review release notes made available on Archivematica wiki, noting any changes that may impact RAC workflows or the upgrade process. If skipping versions (e.g., from 1.7 to 1.9), review release notes for intermediate versions.
+
+### 2. Plan Upgrade (Archivematica Product Owner)
+
+Coordinate with Artefactual, RAC Information Systems Manager, and other key [RAC staff](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/) to plan upgrade at least 3 weeks in advance. Production and development upgrade should be planned at the same time, with production scheduled for 2 weeks after development. The upgrade schedule will likely look like:
+
+* Week 1: Set up development VMs, upgrade development
+* Week 2: Upgrade integrated applications, test development
+* Week 3: Set up production VMs, upgrade production
+* Week 4: Upgrade integrated applications, test production
+
+### 3. Set up Development VMs (Information Systems Manager) (optional)
+
+This is only necessary if the Archivematica upgrade involves a move to new VMs. This step includes:
+
+* Setting up dev VMs in accordance with [current specs](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/)
+* Setting up ssh access for [select RAC staff](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/) for VMs
+* Setting up all accounts and access for Artefactual
+* Configuring [DNS](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/
+
+When this is complete, convey information about IPs and logins to the Archivematica Product Owner so that she can update the Archivematica Info Sheet, inform key staff, and let Artefactual know our development environment is ready to be upgraded.
+
+### 4. Upgrade (Artefactual)
+
+Archivematica Product Owner alerts key staff to window where Archivematica development environment will be down. Artefactual upgrades both pipelines and the storage service in our dev environment.
+
+### 5. Update Integrated Applications in Development Environment (Archivematica Product Owner)
+
+Review whether user accounts, API Keys, and Pipeline and Location UUIDs have changed, and work with key staff to update configs in other applications as necessary. Connected applications may include Fornax and Gemini.
+
+### 6. Test on Development (Archivematica Product Owner)
+
+Along with key staff, test the following:
+
+* All expected [user accounts](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/) are present
+* Transfers can be sent to and stored in all locations on both pipelines
+* All integrations work as expected
+
+Errors as they occur will be communicated to the Archivematica Product Owner, who will work with Artefactual to resolve them. When testing is complete, the Archivematica Product Owner will alert Artefactual and the Information Systems Manager.
+
+### 7. Set up Production VMs (Information Systems Manager) (optional)
+
+This is only necessary if the Archivematica upgrade involves moving to new VMs. This step includes:
+
+* Setting up dev VMs in accordance with [current specs](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/)
+* Setting up ssh access for [select RAC staff](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/) for VMs
+* Setting up all accounts and access for Artefactual
+* Configuring [DNS](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/
+
+### 8. Upgrade (Artefactual)
+
+Archivematica Product Owner alerts key staff to window where Archivematica production environment will be down. Artefactual upgrades both pipelines and the storage service in our production environment.
+
+### 9. Update Integrated Applications (Archivematica Product Owner)
+
+Review whether user accounts, API Keys, and Pipeline and Location UUIds have changed, and work with key staff to update configs in other applications as necessary. Connected applications may include Fornax and Gemini.
+
+### 10. Test on Production (Archivematica Product Owner)
+
+Along with key staff, test the following:
+
+* All expected [user accounts](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/) are present
+* Transfers can be sent to and stored in all locations on both pipelines
+* All integrations work as expected
+
+Errors will be reported to the Archivematica Product Owner, who will work with Artefactual to resolve them. When testing is complete, the Archivematica Product Owner will alert Artefactual and key staff.

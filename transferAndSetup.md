@@ -4,14 +4,14 @@ title:  "RAC Archivematica | Set up for Transfer"
 ---
 
 
-## Transfer Structure 
+## Transfer Structure
 
 Archivematica requires a directory structure that is compliant with Archivematica's SIP directory structure for the following types of transfers:
 
 *  transfers with multiple versions of digitized files
 *  transfer with metadata, such as an archivesspaceids.csv or rights.csv
 *  transfers with manually normalized files
-*  transfers with submission documention
+*  transfers with submission documentation
 
 As these are the vast majority of our use cases, all transfers ingested into Archivematica should be in a structured directory. A structured directory includes the following subdirectories:
 
@@ -30,8 +30,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
 
 ##### Access format: concatenated PDF
 
-```
-/archivematica_sip_examplerefid
+<div class="docs-example code codeblock">/archivematica_sip_examplerefid
   /logs
   /metadata
     archivesspaceids.csv
@@ -47,12 +46,11 @@ Master files are in directory "Master," master edited files are in directory "Ma
       examplerefid_001.tif
       examplerefid_002.tif
       examplerefid_003.tif
-```
+</div>
 
 ##### Access format: JPGs
 
-```
-/archivematica_sip_examplerefid
+<div class="docs-example code codeblock">/archivematica_sip_examplerefid
   /logs
   /metadata
     archivesspaceids.csv
@@ -69,14 +67,13 @@ Master files are in directory "Master," master edited files are in directory "Ma
       examplerefid_001.tif
       examplerefid_002.tif
       examplerefid_003.tif
-```
+</div>
 
 #### Legacy Born Digital
 
 ##### With Manually Normalized Files
 
-```
-/top-level
+<div class="docs-example code codeblock">/top-level
   /logs
   /metadata
     archivesspaceids.csv
@@ -89,12 +86,10 @@ Master files are in directory "Master," master edited files are in directory "Ma
         digital-object1.docx
       /preservation
         digital-object1.docx
-```
+</div>
 
 ##### Without Manually Normalized Files
-
-```
-/top-level
+<div class="docs-example code codeblock">/top-level
   /logs
   /metadata
     archivesspaceids.csv
@@ -103,7 +98,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
     digital-object1.pdf
     digital-object2.pdf
     digital-object3.docx
-```
+</div>
 
 ## Transfer Metadata
 
@@ -132,9 +127,9 @@ Note that filenames, including file extensions, are case sensitive, and should c
 
 *Digitized with jpg access copies*
 
-| objects/access/examplerefid_001.jpg | examplerefid |
-| objects/access/examplerefid_002.jpg | examplerefid |
-| objects/access/examplerefid_003.jpg | examplerefid |
+| objects/examplerefid_001.tif | examplerefid |
+| objects/examplerefid_002.tif | examplerefid |
+| objects/examplerefid_003.tif | examplerefid |
 
 *Digitized with pdf access copy*
 
