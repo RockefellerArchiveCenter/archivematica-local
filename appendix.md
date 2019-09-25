@@ -225,7 +225,7 @@ Errors as they occur will be communicated to the Archivematica Product Owner, wh
 
 ### 7. Set up Production VMs (Information Systems Manager) (optional)
 
-This is only necessary if we are upgrading Archivematica on new VMs. This step includes:
+This is only necessary if the Archivematica upgrade involves moving to new VMs. This step includes:
 
 * Setting up dev VMs in accordance with [current specs](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/)
 * Setting up ssh access for [select RAC staff](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/) for VMs
