@@ -187,7 +187,7 @@ Review release notes made available on Archivematica wiki, noting any changes th
 
 ### 2. Plan Upgrade (Archivematica Product Owner)
 
-Coordinate with Artefactual, Information Systems Manager, and key RAC staff [link] to plan upgrade at least 3 weeks in advance. Production and development upgrade should be planned at the same time, with production scheduled for 2 weeks after development. The upgrade schedule will likely look like:
+Coordinate with Artefactual, RAC Information Systems Manager, and other key RAC staff [link] to plan upgrade at least 3 weeks in advance. Production and development upgrade should be planned at the same time, with production scheduled for 2 weeks after development. The upgrade schedule will likely look like:
 
 * Week 1: Set up development VMs, upgrade development
 * Week 2: Upgrade integrated applications, test development
