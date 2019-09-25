@@ -207,7 +207,7 @@ When this is complete, convey information about IPs and logins to the Archivemat
 
 ### 4. Upgrade (Artefactual)
 
-Archivematica Product Owner alerts key staff to window where Archviematica will be down. Artefactual upgrades both pipelines and the storage service in our dev environment.
+Archivematica Product Owner alerts key staff to window where Archivematica development environment will be down. Artefactual upgrades both pipelines and the storage service in our dev environment.
 
 ### 5. Update Integrated Applications (Archivematica Product Owner)
 
