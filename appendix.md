@@ -209,7 +209,7 @@ When this is complete, convey information about IPs and logins to the Archivemat
 
 Archivematica Product Owner alerts key staff to window where Archivematica development environment will be down. Artefactual upgrades both pipelines and the storage service in our dev environment.
 
-### 5. Update Integrated Applications (Archivematica Product Owner)
+### 5. Update Integrated Applications in Development Environment (Archivematica Product Owner)
 
 Review whether user accounts, API Keys, and Pipeline and Location UUIDs have changed, and work with key staff to update configs in other applications as necessary. Connected applications may include Fornax and Gemini.
 
