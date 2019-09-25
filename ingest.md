@@ -11,7 +11,7 @@ Use the [startTransfer.py](https://github.com/RockefellerArchiveCenter/scripts/b
 * dashboard username
 * dashboard API key
 * base url for API endpoint of dashboard
-* locatoin UUID for transfer source
+* location UUID for transfer source
 
 
 ## Manual Ingest
