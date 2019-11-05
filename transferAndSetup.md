@@ -25,9 +25,6 @@ The following directory structure examples are for Standard Transfers, which wil
 
 #### Digitized Material
 
-Master files are in directory "Master," master edited files are in directory "Master Edited," and serviced edited files are in directory "Service Edited." The output should look like either of the following (depending on access format):
-
-
 ##### Access format: concatenated PDF
 
 <div class="docs-example code codeblock">/archivematica_sip_examplerefid
@@ -133,7 +130,7 @@ Note that filenames, including file extensions, are case sensitive, and should c
 
 *Digitized with pdf access copy*
 
-| objects/access/examplerefid.pdf | examplerefid |
+| objects/examplerefid.pdf | examplerefid |
 
 ### PREMIS CSV
 
@@ -158,7 +155,7 @@ PREMIS rights information is included in the METS file in the AIP and is used to
 
 ## Processing Configuration
 
-The processing configuration administration page of the dashboard allows users to configure the job decision points presented by Archivematica during transfer and ingest. This is set in the [administration tab](administration#processing-configuration). A processing congfiguration file can be included with a transfer that is ingested either via the Dashboard or the automated pipeline; if included, it will override the configuration set as the "default" in the dashboard. To create a processing configuration file, download the processing configuration from the Dashboard, and include it as `processingMCP.xml` in the top-level directory of the transfer.
+The processing configuration administration page of the dashboard allows users to configure the job decision points presented by Archivematica during transfer and ingest. This is set in the [administration tab](administration#processing-configuration). A processing congfiguration file can be included with a transfer that is ingested either via the Dashboard or the API; if included, it will override the configuration set as the "default" in the dashboard. To create a processing configuration file, download the processing configuration from the Dashboard, and include it as `processingMCP.xml` in the top-level directory of the transfer.
 
 ## Transfer Source
 
