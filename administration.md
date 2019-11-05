@@ -4,7 +4,7 @@ title:  "RAC Archivematica | Administration"
 ---
 ## Administration Tab in Dashboard
 
-This section contains information on settings that are specific to the RAC's implementation of Archivematica. For information on general administration, such as adding users, see the [Official Archivematica Documentation](https://www.archivematica.org/en/docs/archivematica-1.7/).
+This section contains information on settings that are specific to the RAC's implementation of Archivematica. For information on general administration, such as adding users, see the [Official Archivematica Documentation](https://www.archivematica.org/en/docs/latest/).
 
 ### Processing Configuration
 The processing configuration administration page of the dashboard allows users to configure the job decision points presented by Archivematica during transfer and ingest. This screen provides you with an easy form to configure the default processingMCP.xml that governs these decisions. When you change the options using the web interface the necessary XML will be written behind the scenes.

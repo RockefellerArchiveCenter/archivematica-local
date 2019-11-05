@@ -13,5 +13,5 @@ This is the Rockefeller Archive Center's local documentation for Archivematica. 
 
 For system administration information, including IP addresses and logins, see the [Archivematica Info Sheet]().
 
-For more information on Archivematica, see the [Official Archivematica Documentation](https://www.archivematica.org/en/docs/archivematica-1.7/).
+For more information on Archivematica, see the [Official Archivematica Documentation](https://www.archivematica.org/en/docs/latest/).
 
