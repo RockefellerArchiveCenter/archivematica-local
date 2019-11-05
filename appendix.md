@@ -179,7 +179,7 @@ The following customizations have been added to the Format Policy Registry (the 
 
 *  ffprobe and MediaInfo should be disabled for JPG and TIFF files, as ExifTool is sufficient for characterizing these formats
 
-## ## Upgrading to a new release of Archivematica
+## Upgrading to a new release of Archivematica
 
 ### 1. Review Release Notes (Archivematica Product Owner)
 
