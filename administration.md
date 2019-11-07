@@ -55,7 +55,6 @@ Currently supported protocols are local filesystem, NFS, pipeline local filesyst
 *  NFS spaces are for NFS exports mounted on the Storage Service server, and the Archivematica pipeline.
 *  Pipeline Local Filesystems refer to the storage that is local to the Archivematica pipeline, but remote to the storage service. For this Space to work properly, passwordless SSH must be set up between the Storage Service host and the Archivematica host. For example, the storage service is hosted on storage_service_host and Archivematica is running on archivematica1 . The transfer sources for Archivematica are stored locally on archivematica1, but the storage service needs access to them. The Space for that transfer source would be a Pipeline Local Filesystem.
 *  Archivematica can store AIPs in a LOCKSS network via LOCKSS-O-Matic, which uses SWORD to communicate between the Storage Service and a Private LOCKSS Network (PLN). When creating a Location for a LOCKSS space, the Purpose of the Location must be AIP Storage.
-*  Fedora via SWORD2 is currently supported in the Storage Service as an Access Protocol to facilitate use of the Archidora plugin, which allows ingest of material from Islandora to Archivematica. This workflow is in beta testing as of Storage Service 0.9/Archivematica 1.5/Islandora 7.x-1.6.
 
 
 ### Locations
@@ -89,10 +88,10 @@ Log files are located in `/var/log/archivematica/MCPClient/` For more informatio
 ### Restart MCP Services
 
 To restart Archivematica, enter the following (order sensitive) from a shell window logged into the Archivematica server:
-<div class="docs-example code codeblock">sudo service gearman-job-server restart
-sudo service archivematica-mcp-server restart
-sudo service archivematica-mcp-client restart
-sudo service archivematica-dashboard restart
+<div class="docs-example code codeblock">sudo systemctl restart gearman-job-server
+sudo systemctl restart archivematica-mcp-server
+sudo systemctl restart archivematica-mcp-client
+sudo systemctl restart archivematica-dashboard
 </div>
 
 ### Troubleshooting ArchivesSpace DIP Upload
