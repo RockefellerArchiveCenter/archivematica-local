@@ -24,11 +24,9 @@ Use the [startTransfer.py](https://github.com/RockefellerArchiveCenter/scripts/b
 
 3. Click *Start Transfer*.
 
-4. When *Job: Approve standard transfer*, appears on the screen, select *Approve transfer*.
+4. Complete any microservice that requires human intervention. When *Micro-service: Create SIP from Transfer* has completed, proceed to the **Ingest tab**.
 
-5. Complete any microservice that requires human intervention. When *Micro-service: Create SIP from Transfer* has completed, proceed to the **Ingest tab**.
-
-6. In in the **Ingest tab**, complete any microservice that requires human intervention. If a DIP will be created, in *Job: Upload DIP*, select *Upload DIP to ArchivesSpace* then follow the instructions in Manual Matching. Manual matching is not necessary if an ArchivesSpace IDs CSV file was included with the transfer.
+5. In in the **Ingest tab**, complete any microservice that requires human intervention. If a DIP will be created, in *Job: Upload DIP*, select *Upload DIP to ArchivesSpace* then follow the instructions in Manual Matching. Manual matching is not necessary if an ArchivesSpace IDs CSV file was included with the transfer.
 
 ### Manual Matching
 
