@@ -138,7 +138,7 @@ Note that filenames, including file extensions, are case sensitive, and should c
 
 ### PREMIS CSV
 
-[PREMIS rights information]() is included in the METS file in the AIP and is used to write information to ArchivesSpace as part of the ArchivesSpace DIP Upload Integration. For details on how PREMIS rights information is mapped to ArchivesSpace, see the [Appendix](appendix#premis-mapping). In order to include rights information with the transfer, a `rights.csv` file must be included in the `/metadata` directory of the transfer. For digitized transfers, the rights.csv should include files in the `/objects` directory, including (if applicable) the multipage PDF file.
+[PREMIS rights information](https://docs.rockarch.org/premis-rights-guidelines/) is included in the METS file in the AIP and is used to write information to ArchivesSpace as part of the ArchivesSpace DIP Upload Integration. For details on how PREMIS rights information is mapped to ArchivesSpace, see the [Appendix](appendix#premis-mapping). In order to include rights information with the transfer, a `rights.csv` file must be included in the `/metadata` directory of the transfer. For digitized transfers, the rights.csv should include files in the `/objects` directory, including (if applicable) the multipage PDF file.
 
 *Example:*
 
