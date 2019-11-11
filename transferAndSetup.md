@@ -21,12 +21,13 @@ As these are the vast majority of our use cases, all transfers ingested into Arc
 
 The following directory structure examples are for Standard Transfers, which will be used the majority of the time. Transfers can also be zipped or unzipped bags, in which case all subdirectories should be in the `/data` directory.
 
+Note that transfers that originated in Aurora are structured for Archivematica ingest in the [Fornax](https://github.com/RockefellerArchiveCenter/fornax) microservice.
+
 ### Examples
 
 #### Digitized Material
 
-Master files are in directory "Master," master edited files are in directory "Master Edited," and serviced edited files are in directory "Service Edited." The output should look like either of the following (depending on access format):
-
+Note that the service directory is optional and should only be used if there are mezzanine TIFFs.
 
 ##### Access format: concatenated PDF
 
@@ -39,9 +40,9 @@ Master files are in directory "Master," master edited files are in directory "Ma
     examplerefid_001.tif
     examplerefid_002.tif
     examplerefid_003.tif
-    examplerefid.pdf
+    examplerefid.PDF
     /access
-      examplerefid.pdf
+      examplerefid.PDF
     /service
       examplerefid_001.tif
       examplerefid_002.tif
@@ -80,7 +81,7 @@ Master files are in directory "Master," master edited files are in directory "Ma
     rights.csv
   /objects
     digital-object1.doc
-    digital-object2.pdf
+    digital-object2.PDF
     /manualNormalization
       /access
         digital-object1.docx
@@ -95,8 +96,8 @@ Master files are in directory "Master," master edited files are in directory "Ma
     archivesspaceids.csv
     rights.csv
   /objects
-    digital-object1.pdf
-    digital-object2.pdf
+    digital-object1.PDF
+    digital-object2.PDF
     digital-object3.docx
 </div>
 
@@ -109,20 +110,20 @@ Generally, two metadata files are included in RAC transfers. These are:
 
 ### ArchivesSpace IDs CSV
 
-In order to automatically match access files with components in ArchivesSpace, a CSV file with the filename `archivesspaceids.csv` must be included in the `/metadata` directory in the transfer. The first column contains the filenames and the second column contains the refid of the component the file needs to be linked to. There is no header row.
+In order to automatically match access files with components in ArchivesSpace, a CSV file with the filename `archivesspaceids.csv` must be included in the `/metadata` directory in the transfer. The first column contains the filenames and the second column contains the ArchivesSpace RefID of the component the file needs to be linked to. There is no header row.
 
-Note that filenames, including file extensions, are case sensitive, and should contain the full path either including or after the `/objects` directory. If a manually normalized access version of the file is included in the transfer, the filepath to include in the first column should be the access version; if an access version is not included, the filepath in the first column should be for the original object. For digitized transfers with `/access` and `/service` directories, the filepath should be to the original object. For digitized transfers where the access copy is a multi-page pdf but the preservation copies are multiple tif files, the filepath should be for the pdf file(s) only, but for the pdf file(s) that sit in the `/objects` directory.
+Note that filenames, including file extensions, are case sensitive, and should contain the full path either including or after the `/objects` directory. If a manually normalized access version of the file is included in the transfer, the filepath to include in the first column should be the access version; if an access version is not included, the filepath in the first column should be for the original object. For digitized transfers with `/access` and `/service` directories, the filepath should be to the original object. For digitized transfers where the access copy is a multi-page PDF but the preservation copies are multiple tif files, the filepath should be for the PDF file(s) only, but for the PDF file(s) that sit in the `/objects` directory.
 
 *No access version:*
 
 | objects/Youth Organizations.doc | ref5086\_rts |
-| objects/Meeting Minutes.pdf | ref5086\_rts |
+| objects/Meeting Minutes.PDF | ref5086\_rts |
 | objects/Youth Organizations Revised.doc | ref5086\_rts |
 
 *Manually normailzed born digital with access version*
 
 | objects/manualNormalization/access/Youth Organizations.docx | examplerefid |
-| objects/manualNormalization/access/Meeting Minutes.pdf | examplerefid |
+| objects/manualNormalization/access/Meeting Minutes.PDF | examplerefid |
 | objects/manualNormalization/access/Youth Organizations Revised.docx | examplerefid |
 
 *Digitized with jpg access copies*
@@ -131,13 +132,13 @@ Note that filenames, including file extensions, are case sensitive, and should c
 | objects/examplerefid_002.tif | examplerefid |
 | objects/examplerefid_003.tif | examplerefid |
 
-*Digitized with pdf access copy*
+*Digitized with PDF access copy*
 
-| objects/access/examplerefid.pdf | examplerefid |
+| objects/access/examplerefid.PDF | examplerefid |
 
 ### PREMIS CSV
 
-PREMIS rights information is included in the METS file in the AIP and is used to write information to ArchivesSpace as part of the ArchivesSpace DIP Upload Integration. For details on how PREMIS rights information is mapped to ArchivesSpace, see the [Appendix](appendix#premis-mapping). In order to include rights information with the transfer, a `rights.csv` file must be included in the `/metadata` directory of the transfer. For digitized transfers, the rights.csv should include files in the `/objects` directory, including (if applicable) the multipage pdf file.
+[PREMIS rights information](https://docs.rockarch.org/premis-rights-guidelines/) is included in the METS file in the AIP and is used to write information to ArchivesSpace as part of the ArchivesSpace DIP Upload Integration. For details on how PREMIS rights information is mapped to ArchivesSpace, see the [Appendix](appendix#premis-mapping). In order to include rights information with the transfer, a `rights.csv` file must be included in the `/metadata` directory of the transfer. For digitized transfers, the rights.csv should include files in the `/objects` directory, including (if applicable) the multipage PDF file.
 
 *Example:*
 
