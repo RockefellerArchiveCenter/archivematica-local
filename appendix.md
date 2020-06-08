@@ -10,7 +10,7 @@ title:  "RAC Archivematica | Appendix"
 These should be the default settings for digitized materials:
 
 | Step                                                                            | Action | Rationale |
-| ------------------------------------------------------------------------------- | ------ |  |
+| ------------------------------------------------------------------------------- | ------ | --------- |
 | Assign UUIDs to directories                                                     | No     |  |
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
@@ -45,7 +45,7 @@ These should be the default settings for digitized materials:
 Legacy born digital materials are those that have been recoverd from digital media items or otherwise accessioned outside of Aurora, and have been fully processed by a processing archivist before ingest into Archivematica. These should be the default settings for legacy born digital materials:
 
 | Step                                                                            | Action | Rationale |
-| ------------------------------------------------------------------------------- | ------ |  |
+| ------------------------------------------------------------------------------- | ------ | --------- |
 | Assign UUIDs to directories                                                     | No     |  |
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
@@ -80,7 +80,7 @@ Legacy born digital materials are those that have been recoverd from digital med
 These should be the default settings for born digital materials ingested from Aurora:
 
 | Step                                                                            | Action | Rationale |
-| ------------------------------------------------------------------------------- | ------ |  |
+| ------------------------------------------------------------------------------- | ------ | --------- |
 | Assign UUIDs to directories                                                     | Yes    |  |
 | Send transfer to quarantine                                                     | No     |  |
 | Remove from quarantine after \_\_ days                                          | 28     |  |
