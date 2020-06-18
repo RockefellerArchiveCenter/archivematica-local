@@ -5,7 +5,7 @@ title:  "RAC Archivematica | Ingest"
 
 ## API
 
-Use the [startTransfer.py](https://github.com/RockefellerArchiveCenter/scripts/blob/master/archivematica/startTransfer.py) Python script to start transfers via the API. The script requires the following information:
+Use the [startTransfer.py](https://github.com/RockefellerArchiveCenter/scripts/blob/base/archivematica/startTransfer.py) Python script to start transfers via the API. The script requires the following information:
 
 * a list of transfers
 * dashboard username
