@@ -12,8 +12,6 @@ These should be the default settings for digitized materials:
 | Step                                                                            | Action | Rationale |
 | ------------------------------------------------------------------------------- | ------ | --------- |
 | Assign UUIDs to directories                                                     | No     |  |
-| Send transfer to quarantine                                                     | No     |  |
-| Remove from quarantine after \_\_ days                                          | 28     |  |
 | Generate transfer structure report                                              | No     |  |
 | Perform file format identification (Transfer)                                   | No     | Digitized ingests contain a small set of known file formats |
 | Extract packages                                                                | No     | Digitized ingests should not contain packages (e.g., zip files) |
@@ -24,19 +22,19 @@ These should be the default settings for digitized materials:
 | Perform file format identification (Ingest)                                     | No      |  |
 | Normalize                                                                       | Do not normalize | Digitized ingests contain preservation masters, as well as an `access` directory that will generate a DIP |
 | Approve normalization                                                           | None   |  |
-| Generate thumbnails                               | No     |  |
+| Generate thumbnails                                                             | No     |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
 | Bind PIDs                                                                       | No     | This functionality is not currently used |
 | Document empty directories                                                      | No     | Empty directories do not exist in RAC-created transfers |
 | Reminder: add metadata if desired                                               | Continue | Digitized ingests include a rights.csv file, so metadata does not need to be added manually |
-| Transcribe files (OCR)                                                          | No     | This uses Tesseract to OCR TIFs; RAC digitized transfers include access PDFs that have already been OCR'd |
+| Transcribe files (OCR)                                                          | No     | This uses Tesseract to OCR TIFs; OCR workflows for digitization happen outside of Archivematica |
 | Perform file format identification command (Submission documentation & metadata) | No |  |
 | Select compression algorithm                                                    | 7z using bzip2 |  |
 | Select compression level                                                        | 5 - normal compression mode |  |
 | Store AIP                                                                       | Yes    |  |
 | Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
-| Upload DIP                                                                       | Upload DIP to ArchivesSpace |  |
+| Upload DIP                                                                      | Upload DIP to ArchivesSpace |  |
 | Store DIP                                                                       | Yes    |  |
 | Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
 
@@ -59,7 +57,7 @@ Legacy born digital materials are those that have been recoverd from digital med
 | Perform file format identification (Ingest)                                     | Yes    |  |
 | Normalize                                                                       | Normalize for preservation and access |  |
 | Approve normalization                                                           | Yes    |  |
-| Generate thumbnails                               | No     |  |
+| Generate thumbnails                                                             | No     |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
 | Bind PIDs                                                                       | No     |  |
@@ -82,8 +80,6 @@ These should be the default settings for born digital materials ingested from Au
 | Step                                                                            | Action | Rationale |
 | ------------------------------------------------------------------------------- | ------ | --------- |
 | Assign UUIDs to directories                                                     | Yes    |  |
-| Send transfer to quarantine                                                     | No     |  |
-| Remove from quarantine after \_\_ days                                          | 28     |  |
 | Generate transfer structure report                                              | No     | Since the structure of the transfer is not changed during ingest, this is not necessary |
 | Perform file format identification  (Transfer)                                  | Yes    |  |
 | Extract packages                                                                | No     |  |
@@ -94,7 +90,7 @@ These should be the default settings for born digital materials ingested from Au
 | Perform file format identification  (Ingest)                                    | Yes    |  |
 | Normalize                                                                       | Normalize for preservation and access |  |
 | Approve normalization                                                           | Yes    |  |
-| Generate thumbnails                               | No     |  |
+| Generate thumbnails                                                             | No     |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
 | Perform policy checks on access derivatives                                     | No     |  |
 | Bind PIDs                                                                       | No     |  |
