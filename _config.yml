@@ -11,4 +11,5 @@ pages:
   - ["Ingest", "ingest"]
   - ["Workflows by Content Type", "workflows"]
   - ["Administration", "administration"]
+  - ["Updating", "updating"]
   - ["Appendix", "appendix"]
