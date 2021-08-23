@@ -12,24 +12,6 @@ The processing configuration administration page of the dashboard allows users t
 For the processing configuring for each workflow, see the [Appendix](archivematica-local/appendix#processing-configuration).
 
 
-### DIP Upload (ArchivesSpace)
-Before ingesting digital objects destined for ArchivesSpace, ensure that the ArchivesSpace DIP upload settings in the administration tab of the dashboard have been set.
-
-These settings need to be configured before digital objects destined for upload to ArchivesSpace are processed. These should be set once--i.e., they do not need to be re-set for each transfer.
-
-In order to save changes to the ArchivesSpace DIP upload configuration, you must enter the password before clicking save. Note that Archivematica will *not* show you an error if the password is not entered.
-
-The development dashboard should use the ArchivesSpace development IP address, and the production dashboard should use the ArchivesSpace productin IP address.
-
-*  **Restrictions apply:** Base on PREMIS
-*  **XLink Show:** New
-*  **XLink Actuate:** onRequest
-*  **Object Type:** Leave blank.
-*  **URI Prefix:** https://storage.rockarch.org
-*  **Use Statement:** Leave blank.
-*  **Conditions Governing Access note:** Leave blank.
-*  **Conditions Governing Use note:** Leave blank.
-
 ## Storage Service
 
 The Archivematica Storage Service allows the configuration of storage spaces associated with multiple Archivematica pipelines. It allows a storage administrator to configure what storage is available to each Archivematica installation, both locally and remote. The Storage Service is a separate application from the Dashboard; stored AIPs can be viewed in the `Archival storage` tab in the Archivematica dashboard.
