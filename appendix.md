@@ -212,3 +212,4 @@ The following customizations have been added to the Format Policy Registry (the 
 ### Characterization Rules
 
 *  ffprobe and MediaInfo should be disabled for JPG and TIFF files, as ExifTool is sufficient for characterizing these formats
+*  ffprobe and ExifTool should be disabled for moving image files, as MediaInfo is sufficient for characterizing these formats
