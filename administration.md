@@ -76,6 +76,13 @@ sudo systemctl restart archivematica-mcp-client
 sudo systemctl restart archivematica-dashboard
 </div>
 
+### Restart Storage Service
+
+To restart the storage service, enter the following (order sensitive) from a shell window logged into the the storage service server:
+<div class="docs-example code codeblock">systemctl reset-failed #will clear the failed status and allow services to be restarted
+systemctl restart archivematica-storage-service
+systemctl restart nginx</div>
+
 ### Troubleshooting ArchivesSpace DIP Upload
 
 As root user, navigate to `/var/log/archivematica/MCPClient/`. To find the relevant line(s) in `MCPClient.debug.log`, search for the microservice name by typing `grep "upload-archivesspace" MCPClient.debug.log`.
