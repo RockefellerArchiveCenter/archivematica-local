@@ -40,9 +40,6 @@ Note that the service directory is optional and should only be used if there are
     examplerefid_001.tif
     examplerefid_002.tif
     examplerefid_003.tif
-    examplerefid.PDF
-    /access
-      examplerefid.PDF
     /service
       examplerefid_001.tif
       examplerefid_002.tif
@@ -60,10 +57,6 @@ Note that the service directory is optional and should only be used if there are
     examplerefid_001.tif
     examplerefid_002.tif
     examplerefid_003.tif
-    /access
-      examplerefid_001.jpg
-      examplerefid_002.jpg
-      examplerefid_003.jpg
     /service
       examplerefid_001.tif
       examplerefid_002.tif
@@ -103,36 +96,9 @@ Note that the service directory is optional and should only be used if there are
 
 ## Transfer Metadata
 
-Generally, two metadata files are included in RAC transfers. These are:
+Generally, one metadata file is included in RAC transfers. This is:
 
-* `archivesspaceids.csv`: This file contains information to automatically match descriptive information in ArchivesSpace to access objects that are in the Archivematica DIP.
-* `rights.csv`: This file contains PREMIS rights information that is included in the METS file in the AIP. This information is also used in the ArchivesSpace DIP upload integration.
-
-### ArchivesSpace IDs CSV
-
-In order to automatically match access files with components in ArchivesSpace, a CSV file with the filename `archivesspaceids.csv` must be included in the `/metadata` directory in the transfer. The first column contains the filenames and the second column contains the ArchivesSpace RefID of the component the file needs to be linked to. There is no header row.
-
-Note that filenames, including file extensions, are case sensitive, and should contain the full path either including or after the `/objects` directory. If a manually normalized access version of the file is included in the transfer, the filepath to include in the first column should be the access version; if an access version is not included, the filepath in the first column should be for the original object. For digitized transfers with `/access` and `/service` directories, the filepath should be to the original object. For digitized transfers where the access copy is a multi-page PDF but the preservation copies are multiple tif files, the filepath should be for the PDF file(s) only, but for the PDF file(s) that sit in the `/objects` directory.
-
-*No access version:*
-
-| objects/Youth Organizations.doc | ref5086\_rts |
-| objects/Meeting Minutes.PDF | ref5086\_rts |
-| objects/Youth Organizations Revised.doc | ref5086\_rts |
-
-*Manually normailzed born digital with access version*
-
-| objects/manualNormalization/access/Youth Organizations.docx | examplerefid |
-| objects/manualNormalization/access/Meeting Minutes.PDF | examplerefid |
-| objects/manualNormalization/access/Youth Organizations Revised.docx | examplerefid |
-
-*Digitized with jpg access copies*
-
-| objects/examplerefid_001.tif | examplerefid |
-| objects/examplerefid_002.tif | examplerefid |
-| objects/examplerefid_003.tif | examplerefid |
-
-*Digitized with PDF access copy*
+* `rights.csv`: This file contains PREMIS rights information that is included in the METS file in the AIP. This information is also used in the ArchivesSpace DIP upload integration. This file is created by the Fornax microservice.
 
 | objects/access/examplerefid.PDF | examplerefid |
 
@@ -163,4 +129,4 @@ The processing configuration administration page of the dashboard allows users t
 
 ## Transfer Source
 
-Transfers must be placed in the [Transfer Source](administration#locations) in order to be ingested (either manually or automatically) into Archivematica. More information on the Transfer Source can be found in the Storage Service documentation.
+Transfers must be placed in the [Transfer Source](administration#locations) in order to be ingested (either manually or automatically) into Archivematica. More information on the Transfer Source can be found in the Storage Service documentation. This is handled by the Fornax microservice.
