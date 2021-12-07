@@ -21,7 +21,7 @@ These should be the default settings for digitized materials:
 | Examine contents                                                                | Skip examine contents | Runs Bulk Extractor - not necessary for digitized materials, which are already processed |
 | Create SIP(s)                                                                   | Create single SIP and continue processing |  |
 | Perform file format identification (Ingest)                                     | No      |  |
-| Normalize                                                                       | Normalize for access | As Project Electron infrastructure ingests do not contain an `access` directory, this is necessary to create a DIP. We may also want to use normalize service files for access |
+| Normalize                                                                       | Do not normalize | Access derivatives are created in a separate application |
 | Approve normalization                                                           | Yes   |  |
 | Choose thumbnail mode                                                           | No     |  |
 | Perform policy checks on preservation derivatives                               | No     |  |
