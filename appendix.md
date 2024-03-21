@@ -40,7 +40,42 @@ These should be the default settings for digitized materials:
 | Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
 
 
-### Legacy Born Digital - Audomated
+### Digitized AV - Automated
+
+These should be the default settings for digitized audiovisual materials:
+
+| Step                                                                            | Action | Rationale |
+| ------------------------------------------------------------------------------- | ------ | --------- |
+| Scan for viruses?                                                               | No     |  |
+| Assign UUIDs to directories                                                     | No     |  |
+| Generate transfer structure report                                              | No     |  |
+| Perform file format identification (Transfer)                                   | No     | Digitized ingests contain a small set of known file formats |
+| Extract packages                                                                | No     | Digitized ingests should not contain packages (e.g., zip files) |
+| Delete packages after extraction                                                | Yes    |  |
+| Perform policy checks on originals                                              | No     | Policy checks refers to MediaConch, which is only used for A/V |
+| Examine contents                                                                | Skip examine contents | Runs Bulk Extractor - not necessary for digitized materials, which are already processed |
+| Create SIP(s)                                                                   | Create single SIP and continue processing |  |
+| Perform file format identification (Ingest)                                     | No      |  |
+| Normalize                                                                       | Do not normalize | Access derivatives are created in a separate application |
+| Approve normalization                                                           | Yes   |  |
+| Choose thumbnail mode                                                           | No     |  |
+| Perform policy checks on preservation derivatives                               | No     |  |
+| Perform policy checks on access derivatives                                     | No     |  |
+| Bind PIDs                                                                       | No     | This functionality is not currently used |
+| Document empty directories                                                      | No     | Empty directories do not exist in RAC-created transfers |
+| Reminder: add metadata if desired                                               | Continue | Digitized ingests include a rights.csv file, so metadata does not need to be added manually |
+| Transcribe SIP contents                                                         | No     | This uses Tesseract to OCR TIFs; OCR workflows for digitization happen outside of Archivematica |
+| Perform file format identification command (Submission documentation & metadata) | No |  |
+| Select compression algorithm                                                    | 7z using bzip2 |  |
+| Select compression level                                                        | 5 - normal compression mode |  |
+| Store AIP                                                                       | Yes    |  |
+| Store AIP location                                                              | Digitized AV AIP Store | Digitized AV should be stored in an S3 bucket |
+| Upload DIP                                                                      | Do not upload DIP |  |
+| Store DIP                                                                       | Do not store    |  |
+| Store DIP location                                                              | None |  |
+
+
+### Legacy Born Digital - Automated
 
 Legacy born digital materials are those that have been recoverd from digital media items or otherwise accessioned outside of Aurora, and have been fully processed by a processing archivist before ingest into Archivematica. These should be the default settings for legacy born digital materials:
 
