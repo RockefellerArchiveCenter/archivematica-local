@@ -31,68 +31,72 @@ Note that the service directory is optional and should only be used if there are
 
 ##### Access format: concatenated PDF
 
-<div class="docs-example code codeblock">/archivematica_sip_examplerefid
-  /logs
-  /metadata
-    archivesspaceids.csv
-    rights.csv
-  /objects
-    examplerefid_001.tif
-    examplerefid_002.tif
-    examplerefid_003.tif
-    /service
-      examplerefid_001.tif
-      examplerefid_002.tif
-      examplerefid_003.tif
-</div>
+```
+/archivematica_sip_examplerefid
+    /logs
+    /metadata
+        archivesspaceids.csv
+        rights.csv
+    /objects
+        examplerefid_001.tif
+        examplerefid_002.tif
+        examplerefid_003.tif
+        /service
+            examplerefid_001.tif
+            examplerefid_002.tif
+            examplerefid_003.tif
+```
 
 ##### Access format: JPGs
 
-<div class="docs-example code codeblock">/archivematica_sip_examplerefid
-  /logs
-  /metadata
-    archivesspaceids.csv
-    rights.csv
-  /objects
-    examplerefid_001.tif
-    examplerefid_002.tif
-    examplerefid_003.tif
-    /service
-      examplerefid_001.tif
-      examplerefid_002.tif
-      examplerefid_003.tif
-</div>
+```
+/archivematica_sip_examplerefid
+    /logs
+    /metadata
+        archivesspaceids.csv
+        rights.csv
+    /objects
+        examplerefid_001.tif
+        examplerefid_002.tif
+        examplerefid_003.tif
+        /service
+          examplerefid_001.tif
+          examplerefid_002.tif
+          examplerefid_003.tif
+```
 
 #### Legacy Born Digital
 
 ##### With Manually Normalized Files
 
-<div class="docs-example code codeblock">/top-level
-  /logs
-  /metadata
-    archivesspaceids.csv
-    rights.csv
-  /objects
-    digital-object1.doc
-    digital-object2.PDF
-    /manualNormalization
-      /access
-        digital-object1.docx
-      /preservation
-        digital-object1.docx
-</div>
+```
+/top-level
+    /logs
+    /metadata
+        archivesspaceids.csv
+        rights.csv
+    /objects
+        digital-object1.doc
+        digital-object2.PDF
+        /manualNormalization
+            /access
+                digital-object1.docx
+            /preservation
+                digital-object1.docx
+```
 
 ##### Without Manually Normalized Files
-<div class="docs-example code codeblock">/top-level
-  /logs
-  /metadata
-    archivesspaceids.csv
-    rights.csv
-  /objects
-    digital-object1.PDF
-    digital-object2.PDF
-    digital-object3.docx
-</div>
+```
+/top-level
+    /logs
+    /metadata
+        archivesspaceids.csv
+        rights.csv
+    /objects
+        digital-object1.PDF
+        digital-object2.PDF
+        digital-object3.docx
+```
 
 ## Transfer Metadata
 
@@ -125,7 +129,7 @@ Generally, one metadata file is included in RAC transfers. This is:
 
 ## Processing Configuration
 
-The processing configuration administration page of the dashboard allows users to configure the job decision points presented by Archivematica during transfer and ingest. This is set in the [administration tab](administration#processing-configuration). A processing congfiguration file can be included with a transfer that is ingested either via the Dashboard or the automated pipeline; if included, it will override the configuration set as the "default" in the dashboard. To create a processing configuration file, download the processing configuration from the Dashboard, and include it as `processingMCP.xml` in the top-level directory of the transfer.
+The processing configuration administration page of the dashboard allows users to configure the job decision points presented by Archivematica during transfer and ingest. This is set in the [administration tab](administration#processing-configuration). A processing configuration file can be included with a transfer that is ingested either via the Dashboard or the automated pipeline; if included, it will override the configuration set as the "default" in the dashboard. To create a processing configuration file, download the processing configuration from the Dashboard, and include it as `processingMCP.xml` in the top-level directory of the transfer.
 
 ## Transfer Source
 

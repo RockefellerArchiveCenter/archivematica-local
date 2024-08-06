@@ -1,4 +1,4 @@
-# Guide to Using Archivematica
+# Archivematica Guide
 RAC's local Archivematica documentation
 
 ## Accessing the documentation

@@ -16,7 +16,7 @@ For the processing configuring for each workflow, see the [Appendix](archivemati
 
 The Archivematica Storage Service allows the configuration of storage spaces associated with multiple Archivematica pipelines. It allows a storage administrator to configure what storage is available to each Archivematica installation, both locally and remote. The Storage Service is a separate application from the Dashboard; stored AIPs can be viewed in the `Archival storage` tab in the Archivematica dashboard.
 
-The Storage Service is the mechanism by which Archivematica is able to store packages and manage file locations, such as transfer source locations. Responsibilies for the Storage Service should be assigned to one Administrative user who will be responsible for managing locations and AIP deletion requests.
+The Storage Service is the mechanism by which Archivematica is able to store packages and manage file locations, such as transfer source locations. Responsibilities for the Storage Service should be assigned to one Administrative user who will be responsible for managing locations and AIP deletion requests.
 
 The storage service is organized into four different entities: spaces, locations, pipelines, packages.
 
@@ -70,18 +70,23 @@ Log files are located in `/var/log/archivematica/MCPClient/` For more informatio
 ### Restart MCP Services
 
 To restart Archivematica, enter the following (order sensitive) from a shell window logged into the Archivematica server:
-<div class="docs-example code codeblock">sudo systemctl restart gearman-job-server
+
+```console
+sudo systemctl restart gearman-job-server
 sudo systemctl restart archivematica-mcp-server
 sudo systemctl restart archivematica-mcp-client
 sudo systemctl restart archivematica-dashboard
-</div>
+```
 
 ### Restart Storage Service
 
 To restart the storage service, enter the following (order sensitive) from a shell window logged into the the storage service server:
-<div class="docs-example code codeblock">systemctl reset-failed #will clear the failed status and allow services to be restarted
+
+```console
+systemctl reset-failed #will clear the failed status and allow services to be restarted
 systemctl restart archivematica-storage-service
-systemctl restart nginx</div>
+systemctl restart nginx
+```
 
 ### Troubleshooting ArchivesSpace DIP Upload
 

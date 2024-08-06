@@ -1,9 +1,6 @@
 public: true
 type: "docs"
-category: "preservation"
-tags:
-  - "workflow"
-title: "Guide to Using Archivematica"
+title: "Archivematica Guide"
 description: "Local Archivematica documentation."
 pages:
   - ["Archivematica Overview", "index"]
