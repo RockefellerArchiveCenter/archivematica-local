@@ -72,7 +72,7 @@ Log files are located in `/var/log/archivematica/MCPClient/` For more informatio
 To restart Archivematica, enter the following (order sensitive) from a shell window logged into the Archivematica server:
 
 ```console
-sudo systemctl restart gearman-job-server
+sudo systemctl restart gearmand
 sudo systemctl restart archivematica-mcp-server
 sudo systemctl restart archivematica-mcp-client
 sudo systemctl restart archivematica-dashboard
@@ -91,5 +91,3 @@ systemctl restart nginx
 ### Troubleshooting ArchivesSpace DIP Upload
 
 As root user, navigate to `/var/log/archivematica/MCPClient/`. To find the relevant line(s) in `MCPClient.debug.log`, search for the microservice name by typing `grep "upload-archivesspace" MCPClient.debug.log`.
-
-

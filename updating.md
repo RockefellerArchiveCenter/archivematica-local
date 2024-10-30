@@ -42,9 +42,9 @@ Review whether user accounts, API Keys, and Pipeline and Location UUIDs have cha
 Along with key staff, test the following:
 
 * All expected [user accounts](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/) are present
-* Transfers can be sent to and stored in all locations on both pipelines
-* All integrations work as expected
 * Processing configurations are set up as expected
+* Run Fornax integration tests on both pipelines (`sudo -u apache env/bin/python manage.py test --tag=integration`)
+* Transfers can be sent to and stored in all locations on both pipelines
 
 Errors as they occur will be communicated to the Archivematica Product Owner, who will work with Artefactual to resolve them. When testing is complete, the Archivematica Product Owner will alert Artefactual and the Information Systems Manager.
 
