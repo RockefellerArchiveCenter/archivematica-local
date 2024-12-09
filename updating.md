@@ -62,6 +62,8 @@ Along with key staff, test the following:
 
 * All expected [user accounts](https://docs.rockarch.org/systems-info-sheets/archivematica-info-sheet/) are present
 * Transfers can be sent to and stored in all locations on both pipelines
+  * Turn off the Fornax Start Transfer service in the Zodiac dashboard before testing
+  * Once all tests are completed successfully, turn the Fornax Start Transfer service back on
 * All integrations work as expected
 * Processing configurations are set up as expected
 
