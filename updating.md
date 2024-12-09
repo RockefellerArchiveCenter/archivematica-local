@@ -54,7 +54,7 @@ Archivematica Product Owner alerts key staff to window where Archivematica produ
 
 ### 8. Update Integrated Applications (Archivematica Product Owner)
 
-Review whether user accounts, API Keys, and Pipeline and Location UUIds have changed, and work with key staff to update configs in other applications as necessary. Connected applications may include Fornax and Gemini. Ensure that storage service callbacks for Gemini are [properly configured](https://github.com/RockefellerArchiveCenter/gemini/blob/base/README.md#archivematica-configuration).
+Review whether user accounts, API Keys, and Pipeline and Location UUIds have changed, and work with key staff to update configs in other applications as necessary. Connected applications include Fornax and Gemini. Ensure that storage service callbacks for Gemini are [properly configured](https://github.com/RockefellerArchiveCenter/gemini/blob/base/README.md#archivematica-configuration).
 
 ### 9. Test on Production (Archivematica Product Owner)
 
