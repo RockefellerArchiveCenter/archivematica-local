@@ -36,8 +36,8 @@ These should be the default settings for digitized materials:
 | Store AIP                                                                       | Yes    |  |
 | Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
 | Upload DIP                                                                      | Do not upload DIP |  |
-| Store DIP                                                                       | Yes    |  |
-| Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
+| Store DIP                                                                       | Reject DIP    | Access copies are created outside of Archivematica |
+| Store DIP location                                                              | None |  |
 
 
 ### Digitized AV - Automated
@@ -71,7 +71,7 @@ These should be the default settings for digitized audiovisual materials:
 | Store AIP                                                                       | Yes    |  |
 | Store AIP location                                                              | Digitized AV AIP Store | Digitized AV should be stored in an S3 bucket |
 | Upload DIP                                                                      | Do not upload DIP |  |
-| Store DIP                                                                       | Do not store    |  |
+| Store DIP                                                                       | Reject DIP    | Access copies are created outside of Archivematica |
 | Store DIP location                                                              | None |  |
 
 
@@ -108,8 +108,8 @@ Legacy born digital materials are those that have been recoverd from digital med
 | Store AIP                                                                       | Yes   |  |
 | Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
 | Upload DIP                                                                      | Do not upload DIP |  |
-| Store DIP                                                                       | none   |  |
-| Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
+| Store DIP                                                                       | Reject DIP   | Access copies are created outside of Archivematica |
+| Store DIP location                                                              | None |  |
 
 ### Born Digital 
 
@@ -142,8 +142,8 @@ These should be the default settings for born digital materials ingested from Au
 | Store AIP                                                                       | Yes   |  |
 | Store AIP location                                                              | Store AIP in standard Archivematica directory |  |
 | Upload DIP                                                                       | Do not upload DIP |  |
-| Store DIP                                                                       | Yes   |  |
-| Store DIP location                                                              | Store DIP in standard Archivematica directory |  |
+| Store DIP                                                                       | Reject DIP   | Access copies are created outside of Archivematica |
+| Store DIP location                                                              | None |  |
 
 
 ## FPR Customatizations
