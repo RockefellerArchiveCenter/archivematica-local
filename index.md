@@ -10,7 +10,7 @@ This is the Rockefeller Archive Center's local documentation for Archivematica. 
  - **Upgrading:** Checklist for upgrading Archivematica to a new version.
  - **Appendix:** Details on the Processing Configuration for each content type and local configurations of the FPR, and upgrading checklist.
 
-For system administration information, including IP addresses and logins, see the [Archivematica Info Sheet]().
+For system administration information, including IP addresses and logins, see the [Archivematica Info Sheet](https://docs-internal.rockarch.org/systems-info-sheets/archivematica-info-sheet).
 
 For more information on Archivematica, see the [Official Archivematica Documentation](https://www.archivematica.org/en/docs/latest/).
 
