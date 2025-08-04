@@ -126,7 +126,7 @@ This is the processing configuration named "automated" for born digital material
 | Perform policy checks on originals                                              | No     | Policy checks refers to MediaConch, which is only used for A/V |
 | Examine contents                                                                | Skip examine contents | Runs BulkExtractor; unclear what the benefits are of doing this at ingest |
 | Create SIP(s)                                                                   | Create single SIP and continue processing | Avoid sending packages to temp storage and creating a backlog for processing |
-| Perform file format identification  (Ingest)                                    | No    | No changes have occurred to the transfer packages so the file format identification would be the same, existing data will be used |
+| Perform file format identification  (Ingest)                                    | No    | No changes have occurred to the transfer packages (such as extraction of packages) so the file format identification would be the same, existing data will be used |
 | Normalize                                                                       | Normalize for preservation | Access copies are created and uploaded to access systems with other microservices outside of Archivematica |
 | Approve normalization                                                           | Yes    | Normalization rules are set in the Format Policy Registry |
 | Choose thumbnail mode                                                           | No     | Thumbnails are not used in any RAC systems |
