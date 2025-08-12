@@ -101,7 +101,7 @@ To restart the Automation Tools and retry a failed transfer, enter the following
 sudo su - archivematica -s /bin/bash
 sqlite3 /var/archivematica/automation-tools/transfers.db
 select * from unit;
-delete from unit where id=XXX; {::comment}UUID of the transfer in place of XXX{:/comment}
+delete from unit where id=XXX; #UUID of the transfer in place of XXX
 .exit
 rm /var/archivematica/automation-tools/transfers-pid.lck
 ```
