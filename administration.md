@@ -88,11 +88,6 @@ systemctl restart archivematica-storage-service
 systemctl restart nginx
 ```
 
-### Troubleshooting ArchivesSpace DIP Upload
-
-As root user, navigate to `/var/log/archivematica/MCPClient/`. To find the relevant line(s) in `MCPClient.debug.log`, search for the microservice name by typing `grep "upload-archivesspace" MCPClient.debug.log`.
-
-
 ### Automation Tools
 
 To restart the Automation Tools and retry a failed transfer, enter the following (order sensitive) from a shell window logged into the Archivematica server:
