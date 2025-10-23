@@ -79,19 +79,23 @@ sudo systemctl restart archivematica-mcp-client
 sudo systemctl restart archivematica-dashboard
 ```
 
-### Restart Storage Service
+### View Storage Service Logs
 
 The Storage Service is configured to use the `journalctl` utility to query and view logs. You can read more about this utility on its [Linux manual page](https://man7.org/linux/man-pages/man1/journalctl.1.html).
 
 #### Example Commands
 
-```console
-journalctl -u archivematica-storage-service.service --no-pager -f #shows most recent log
+To view the most recent log:
+`journalctl -u archivematica-storage-service.service --no-pager -f` 
 
-journalctl -u archivematica-storage-service.service --no-pager --since yesterday #shows log since day before
+To view logs since the day before:
+`journalctl -u archivematica-storage-service.service --no-pager --since yesterday` 
 
-journalctl -u archivematica-storage-service.service --no-pager --since="YYYY-MM-DD HH:MM:SS" --until="YYYY-MM-DD HH:MM:SS" #shows logs within a specific time period
-```
+To view logs within a specific time period:
+`journalctl -u archivematica-storage-service.service --no-pager --since="YYYY-MM-DD HH:MM:SS" --until="YYYY-MM-DD HH:MM:SS"`
+
+
+### Restart Storage Service
 
 To restart the storage service, enter the following (order sensitive) from a shell window logged into the the storage service server:
 
