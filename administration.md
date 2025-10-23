@@ -65,7 +65,8 @@ The Administration section manages the users and settings for the Storage Servic
 
 ## Troubleshooting
 
-Log files are located in `/var/log/archivematica/MCPClient/` For more information, see [Archivematica Technical Training: Diagnostics Guide](https://docs.google.com/document/d/1GybyH7X_gpZ7wpYVo5d9__LeGNuXYCky0oairJGJAmo/edit#) and [Archivematica IT Infrastructure Documentation](https://docs.google.com/document/d/1NDzGHBGuPFa7GTHCMEl3D2nvvdZRxG2FpdsGAYoG31I/edit#heading=h.ngl4bsv7skxi).
+More information can be found in the [Archivematica Technical Training: Diagnostics Guide](https://docs.google.com/document/d/1GybyH7X_gpZ7wpYVo5d9__LeGNuXYCky0oairJGJAmo/edit#) and [Archivematica IT Infrastructure Documentation](https://docs.google.com/document/d/1NDzGHBGuPFa7GTHCMEl3D2nvvdZRxG2FpdsGAYoG31I/edit#heading=h.ngl4bsv7skxi).
+
 
 ### Restart MCP Services
 
@@ -77,6 +78,22 @@ sudo systemctl restart archivematica-mcp-server
 sudo systemctl restart archivematica-mcp-client
 sudo systemctl restart archivematica-dashboard
 ```
+
+### View Storage Service Logs
+
+The Storage Service is configured to use the `journalctl` utility to query and view logs. You can read more about this utility on its [Linux manual page](https://man7.org/linux/man-pages/man1/journalctl.1.html).
+
+#### Example Commands
+
+To view the most recent log:
+`journalctl -u archivematica-storage-service.service --no-pager -f` 
+
+To view logs since the day before:
+`journalctl -u archivematica-storage-service.service --no-pager --since yesterday` 
+
+To view logs within a specific time period:
+`journalctl -u archivematica-storage-service.service --no-pager --since="YYYY-MM-DD HH:MM:SS" --until="YYYY-MM-DD HH:MM:SS"`
+
 
 ### Restart Storage Service
 
