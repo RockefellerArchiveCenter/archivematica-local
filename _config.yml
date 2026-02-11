@@ -6,5 +6,6 @@ pages:
   - ["Archivematica Overview", "index"]
   - ["Set up for Transfer", "transferAndSetup"]
   - ["Administration", "administration"]
+  - ["PREMIS Rights", "premis"]
   - ["Updating", "updating"]
   - ["Appendix", "appendix"]
