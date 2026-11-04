@@ -104,7 +104,7 @@ Generally, one metadata file is included in RAC transfers. This is:
 
 * `rights.csv`: This file contains PREMIS rights information that is included in the METS file in the AIP. This information is also used in the ArchivesSpace DIP upload integration. This file is created by the Fornax microservice.
 
-| objects/access/examplerefid.PDF | examplerefid |
+`objects/access/examplerefid.PDF | examplerefid`
 
 ### PREMIS CSV
 
